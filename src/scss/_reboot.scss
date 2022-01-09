@@ -137,9 +137,11 @@
  }
  
  a {
-   color: #007bff;
-   text-decoration: none;
-   background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: underline;
+  color: #fff;
  }
  
  a:hover {

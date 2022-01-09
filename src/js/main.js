@@ -1,53 +1,63 @@
 'use strict';
-
-svg4everybody();
-
-/**
- * lazy loading
- */
-document.addEventListener("DOMContentLoaded", () => {
-  const lazyImages = [].slice.call(document.querySelectorAll(".lazy"));
-  const lazyBgs = [].slice.call(document.querySelectorAll(".lazy-bg"));
-
-  if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
-    const lazyImageObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach( (entry) => {
-        if (entry.isIntersecting) {
-          const lazyImage = entry.target;
-          if (lazyImage.dataset.src) {
-            lazyImage.src = lazyImage.dataset.src;
-          }
-          if (lazyImage.dataset.src) {
-            lazyImage.srcset = lazyImage.dataset.srcset;
-          }
-          lazyImage.classList.remove("lazy");
-          lazyImageObserver.unobserve(lazyImage);
-        }
-      });
-    });
-    const lazyBgObserver = new IntersectionObserver( (entries, observer) => {
-      entries.forEach( (entry) => {
-        if (entry.isIntersecting) {
-          const lazyBg = entry.target;
-          lazyBg.classList.add("lazy-bg--loaded");
-          lazyBgObserver.unobserve(lazyBg);
-        }
-      });
-    });
-
-    lazyImages.forEach( (lazyImage) => {
-      lazyImageObserver.observe(lazyImage);
-    });
-    lazyBgs.forEach( (lazyBg) => {
-      lazyBgObserver.observe(lazyBg);
-    });
-  } else {
-    lazyImages.forEach( (lazyImage) => {
-      lazyImage.src = lazyImage.dataset.src;
-      lazyImage.srcset = lazyImage.dataset.srcset;
-    });
-    lazyBgs.forEach( (lazyBg) => {
-      lazyBg.classList.add("lazy-bg--loaded");
-    });
-  }
+$(function () {
+    $('.lazy').Lazy();
 });
+
+$('.toggle-button').click(() => {
+    $('.header_menu').toggleClass('active');
+    if ($('.header_menu').hasClass('active')) {
+        $('body, html').addClass('noscroll');
+        $('.toggle-button').text('close')
+    } else {
+        $('.toggle-button').text('menu');
+        $('body, html').removeClass('noscroll');
+    }
+})
+
+$('.link-modal').click(() => {
+    $('.main-screen__wrapper_after-text_modal').fadeIn();
+})
+$('.main-screen__wrapper_after-text_modal_close').click(() => {
+    $('.main-screen__wrapper_after-text_modal').fadeOut();
+})
+
+$(".home_link").click(function (e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: ($(aid).offset().top - 70)}, 'slow');
+    $('.toggle-button').text('menu');
+    $('body, html').removeClass('noscroll');
+    $('.header_menu').removeClass('active');
+});
+
+$(".fa-star").on("mouseover", function () {
+    $(this).parent().attr('data-rate', ($(this).index() + 1))
+})
+$(".fa-star").on("mouseleave", function () {
+    const tempRate = $(this).parent().attr('data-hover-rate');
+    $(this).parent().attr('data-rate', tempRate)
+})
+$(".fa-star").click(function () {
+  $(this).parent().attr({
+    'data-hover-rate': ($(this).index() + 1), 'data-rate': ($(this).index() + 1)
+  });
+})
+
+$(".card-text_small_linkk").click(function () {
+    $(this).parent().toggleClass('active');
+})
+
+$(".card-text_small_modal_close").click(function () {
+    $(this).parents().eq(1).removeClass('active');
+})
+
+$(".reedmore").click(function () {
+    if ($(this).hasClass('active')) {
+        $('.more').fadeOut();
+        $(this).text('Read more');
+    } else {
+        $('.more').fadeIn();
+        $(this).text('Read less');
+    }
+    $(this).toggleClass('active');
+})

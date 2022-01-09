@@ -194,7 +194,11 @@ gulp.task('clean', function () {
 gulp.task('js', function (callback) {
   console.log('dsdsds')
   if(jsList.length) {
-    return gulp.src(jsList)
+    return gulp.src([
+      './src/js/forbuild/jquery.latest.js',
+      './src/js/vendor/jquery.lazy.min.js',
+      './src/js/main.js',
+    ])
       .pipe(plumber({ errorHandler: onError }))             // не останавливаем автоматику при ошибках
       .pipe(concat('vendor.min.js'))                        // конкатенируем все файлы в один с указанным именем
       .pipe(uglify())

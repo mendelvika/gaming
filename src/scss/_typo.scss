@@ -1,18 +1,24 @@
 h1 {
-  font-size: #{$h1-font-size}px;
-  line-height: $line-height;
+  font-size: 44px;
+  line-height: 1.38;
 }
 h2 {
-  font-size: #{$h2-font-size}px;
-  line-height: $line-height;
+  font-size: 40px;
+  line-height: 1.375;
+  @include breakpoint-max($md){
+    font-size: 28px;
+  }
 }
 h3 {
-  font-size: #{$h3-font-size}px;
+  font-size: 30px;
   line-height: $line-height;
+  @include breakpoint-max($md){
+    font-size: 24px;
+  }
 }
-h4 {
-  font-size: #{$h4-font-size}px;
-  line-height: $line-height;
+h4, .h4 {
+  font-size: 22px;
+  line-height: 30px;
 }
 h5 {
   font-size: #{$h5-font-size}px;
@@ -21,4 +27,37 @@ h5 {
 h6 {
   font-size: #{$h6-font-size}px;
   line-height: $line-height;
+}
+
+ul{
+  margin: 20px 0;
+  color: $text-color;
+  list-style: none;
+  li{
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      &:before{
+          content: '';
+          display: block;
+          background: $button-color;
+          width: 12px;
+          min-width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          margin: 6px 40px 0px 0px;
+      }
+  }
+}
+
+p{
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: $text-color;
+  margin: 20px 0;
+  @include breakpoint-max($md){
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
