@@ -356,7 +356,8 @@ p {
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  min-width: 320px; }
   @media (min-width: 992px) {
     .container {
       max-width: 960px; } }
@@ -1523,6 +1524,8 @@ a {
     .header {
       padding-top: 10px;
       padding-bottom: 10px; }
+      .header .logo {
+        width: 100px; }
       .header_menu {
         padding-top: 30px;
         width: auto;
@@ -1549,10 +1552,6 @@ a {
           margin-left: 20px;
           margin-right: 20px;
           text-decoration: none; } }
-  @media (max-width: 375px) {
-    .header .logo {
-      width: 112px;
-      height: 20px; } }
 
 .toggle-button {
   background: white;
@@ -1578,11 +1577,10 @@ a {
 
 .footer {
   background: #002868;
-  padding: 30px 0px; }
+  padding: 30px 0px 0; }
   .footer .ongameuk-logo {
     margin-right: 12px;
-    width: 196px;
-    height: 38px; }
+    width: 157px; }
     .footer .ongameuk-logo img {
       width: 100%;
       height: 100%;
@@ -1620,8 +1618,7 @@ a {
       margin-right: 20px; }
   @media (max-width: 992px) {
     .footer .ongameuk-logo {
-      width: 150px;
-      height: 28px; }
+      width: 100px; }
     .footer__logos {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -1693,7 +1690,8 @@ a {
   @media (max-width: 768px) {
     .info-block {
       margin-left: -15px;
-      margin-right: -15px; }
+      margin-right: -15px;
+      margin-top: 20px; }
       .info-block_content {
         margin-left: 10px;
         margin-right: 10px;
@@ -1907,7 +1905,7 @@ a {
     .main-screen .main-title {
       font-size: 26px;
       line-height: 35px;
-      width: 260px; }
+      width: 250px; }
       .main-screen .main-title_orange {
         font-size: 42px;
         line-height: 46px; }
@@ -1974,6 +1972,8 @@ a {
     position: relative;
     z-index: 2;
     margin: 30px 0px; }
+    .card-section.inner {
+      margin-top: 90px; }
   .card-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2258,6 +2258,9 @@ a {
         height: 50px;
         font-size: 18px;
         line-height: 50px; } }
+  @media (max-width: 992px) {
+    .card-section.inner {
+      margin-top: 80px; } }
   @media (max-width: 767px) {
     .card {
       -webkit-box-orient: vertical;
@@ -2270,6 +2273,10 @@ a {
       border-radius: 10px;
       padding: 15px 15px 41px;
       background-color: #fff; }
+      .card-section {
+        margin-top: 5px; }
+        .card-section.inner {
+          margin-top: 70px; }
       .card-container {
         height: 130px; }
       .card-logo {
@@ -2283,7 +2290,7 @@ a {
         font-size: 15px;
         line-height: 34px; }
       .card-ratet {
-        width: 84px;
+        width: 90px;
         font-size: 10px;
         position: absolute;
         top: 21px;
@@ -2299,16 +2306,20 @@ a {
           border-radius: 5px;
           padding: 9px;
           font-size: 14px;
-          line-height: 20px; }
+          line-height: 20px;
+          text-align: center; }
         .card-text_small {
           position: absolute;
           bottom: 10px;
           left: 0;
-          width: 100%; }
+          width: 100%;
+          text-align: center; }
       .card-bonus {
         line-height: 42px;
         margin-top: 16px;
-        width: 100%; } }
+        width: 100%; }
+      .card-badge img {
+        margin-right: 6px; } }
   @media (max-width: 500px) {
     .card {
       position: relative;
@@ -2345,7 +2356,10 @@ a {
       font-size: 13px; } }
 
 .text {
-  margin: 40px 0px 60px; }
+  margin: 40px 0px; }
+  @media (max-width: 768px) {
+    .text {
+      margin-bottom: 30px; } }
   .text h4 {
     margin-top: 30px; }
   .text h5 {
@@ -2354,6 +2368,25 @@ a {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto; }
+    .text_content_button-wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin-top: 40px; }
+      @media (max-width: 768px) {
+        .text_content_button-wrap {
+          margin-top: 20px; } }
+      .text_content_button-wrap button {
+        -ms-flex-negative: 0;
+            flex-shrink: 0; }
+      .text_content_button-wrap .sections-divider {
+        margin: 0 0 0 40px; }
+        @media (max-width: 768px) {
+          .text_content_button-wrap .sections-divider {
+            margin-left: 10px; } }
     .text_content_blue {
       background-color: rgba(231, 240, 255, 0.6);
       position: relative;
@@ -2380,7 +2413,6 @@ a {
         width: 5px;
         border-radius: 0 5px 5px 0; }
     .text_content .primary-button {
-      margin-top: 20px;
       font-size: 16px; }
 
 .form {
@@ -2472,6 +2504,7 @@ a {
     .form {
       padding: 20px 10px;
       border-radius: 10px;
+      margin-top: 30px;
       margin-bottom: 50px; }
       .form .primary-button {
         width: 100%;
@@ -2598,7 +2631,7 @@ a {
       .top-card__overflow {
         overflow: scroll;
         position: relative;
-        height: 320px; }
+        height: 390px; }
       .top-card__img {
         height: 140px; }
       .top-card__title {
@@ -2615,7 +2648,13 @@ a {
         font-size: 14px;
         line-height: 19px; }
       .top-card .primary-button {
-        margin-top: 15px; } }
+        margin-top: 15px; }
+      .top-card__content p {
+        max-height: 66px;
+        overflow: hidden; } }
+  @media (max-width: 768px) {
+    .top-card__overflow {
+      height: 360px; } }
 
 .best-banner__container {
   margin-top: 70px;
@@ -2744,6 +2783,9 @@ a {
     .fa-star svg {
       width: 12px;
       height: 12px; } }
+
+.more {
+  display: none; }
 
 @-webkit-keyframes score_progress {
   0% {

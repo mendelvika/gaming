@@ -223,24 +223,6 @@
     .undertitle {
       display: none;
     }
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
-
-
 
     &__right {
       padding-left: 0;
@@ -272,7 +254,7 @@
     .main-title {
       font-size: 26px;
       line-height: 35px;
-      width: 260px;
+      width: 250px;
 
       &_orange {
         font-size: 42px;
@@ -282,11 +264,6 @@
     &__img {                    
       max-height: 145px;        
     }                           
-
-
-
-
-
   }
   @include breakpoint-max($sm) {
     .undertitle {
@@ -358,6 +335,9 @@
     position: relative;
     z-index: 2;
     margin: 30px 0px;
+    &.inner {
+      margin-top: 90px;
+    }
   }
 
   &-wrapper {
@@ -701,6 +681,11 @@
       }
     }
   }
+  @include breakpoint-max($lg) {
+    &-section.inner {
+      margin-top: 80px;
+    }
+  }
   @media (max-width: 767px) {
     flex-direction: column;
     height: auto;
@@ -708,6 +693,12 @@
     border-radius: 10px;
     padding: 15px 15px 41px;
     background-color: #fff;
+    &-section {
+      margin-top: 5px;
+      &.inner {
+        margin-top: 70px;
+      }
+    }
     &-container {
       height: 130px;
     }
@@ -733,7 +724,7 @@
       }
     }
     &-ratet {
-      width: 84px;
+      width: 90px;
       font-size: 10px;
       position: absolute;
       top: 21px;
@@ -754,6 +745,7 @@
         padding: 9px;
         font-size: 14px;
         line-height: 20px;
+        text-align: center;
       }
 
       &_small {
@@ -761,12 +753,18 @@
         bottom: 10px;
         left: 0;
         width: 100%;
+        text-align: center;
       }
     }
     &-bonus {
       line-height: 42px;
       margin-top: 16px;
       width: 100%;
+    }
+    &-badge {
+      img {
+        margin-right: 6px;
+      }
     }
   }
   @include breakpoint-max($sm2) {
@@ -819,7 +817,10 @@
 }
 
 .text {
-  margin: 40px 0px 60px;
+  margin: 40px 0px;
+  @include breakpoint-max($md) {
+    margin-bottom: 30px;
+  }
 
   h4 {
     margin-top: 30px;
@@ -833,6 +834,23 @@
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    &_button-wrap {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      @include breakpoint-max($md) {
+        margin-top: 20px;
+      }
+      button {
+        flex-shrink: 0;
+      }
+      .sections-divider {
+        margin: 0 0 0 40px;
+        @include breakpoint-max($md) {
+          margin-left: 10px;
+        }
+      }
+    }
 
     &_blue {
       background-color: rgba(231, 240, 255, 0.6);
@@ -869,7 +887,6 @@
     }
 
     .primary-button {
-      margin-top: 20px;
       font-size: 16px;
     }
   }
@@ -959,6 +976,7 @@
   @include breakpoint-max($lg) {
     padding: 20px 10px;
     border-radius: 10px;
+    margin-top: 30px;
     margin-bottom: 50px;
     .primary-button {
       width: 100%;
@@ -1099,7 +1117,7 @@
     &__overflow {
       overflow: scroll;
       position: relative;
-      height: 320px;
+      height: 390px;
     }
     &__img {
       height: 140px;
@@ -1123,6 +1141,15 @@
     }
     .primary-button {
       margin-top: 15px;
+    }
+    &__content p {
+      max-height: 66px;
+      overflow: hidden;
+    }
+  }
+  @include breakpoint-max($md) {
+    &__overflow {
+      height: 360px;
     }
   }
 }
@@ -1313,7 +1340,7 @@
 }
 
 .more {
-  //display: none;
+  display: none;
 }
 
 .reedmore {

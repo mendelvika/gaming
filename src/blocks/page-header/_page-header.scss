@@ -42,6 +42,9 @@
   @include breakpoint-max($lg){
     padding-top: 10px;
     padding-bottom: 10px;
+    .logo{
+      width: 100px;
+    }
     &_menu {
       padding-top: 30px;
       width: auto;
@@ -71,8 +74,8 @@
   }
   @include breakpoint-max($xs4){
     .logo{
-      width: 112px;
-      height: 20px;
+      //width: 112px;
+      //height: 20px;
     }
   }
 }
