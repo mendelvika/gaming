@@ -1,3 +1,74 @@
-.page-footer {
-  
+.footer {
+    background: $button-color;
+    padding: 30px 0px;
+    .ongameuk-logo{
+        margin-right: 12px;
+        width: 196px;
+        height: 38px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .copyright{
+        font-size: 10px;
+        line-height: 14px;
+        color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        width: 100%;
+    }
+    &-row{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    &__policy{
+        max-width: 860px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+    }
+    &__logos{
+        display: flex;
+        margin: 30px 0;
+        img{
+            margin-right: 20px;
+        }
+    }
+    @include breakpoint-max($lg){
+        .ongameuk-logo{
+            width: 150px;
+            height: 28px;
+        }
+        &__logos{
+            flex-wrap: wrap;
+            justify-content: space-around;
+            img{
+                width: 78px;
+                height: 42px;
+                margin-bottom: 10px;
+            }
+        }
+        &__policy{
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+    @include breakpoint-max($sm){
+        &-row{
+            flex-direction: column;
+        }
+        &-col{
+            width: 100%;
+        }
+        &__policy{
+            margin-top: 20px;
+        }
+        
+        .copyright{
+            margin: 0;
+        }
+    }
 }

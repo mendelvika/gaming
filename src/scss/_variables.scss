@@ -1,5 +1,5 @@
 // fonts
-$font: 'Open Sans', sans-serif;
+$font: 'Manrope', sans-serif;
 $root-font-size: 16;
 $h1-font-size: $root-font-size * 2.5 !default;
 $h2-font-size: $root-font-size * 2 !default;
@@ -12,12 +12,18 @@ $line-height: 1.2;
 // grid
 $col-count: 12 !default;
 $grid-gutter: 30px !default;
-$container-xl: 1170px !default;
+$container-xl: 1156px !default;
 $container-lg: 960px !default;
 $container-md: 720px !default;
 $container-sm: 540px !default;
-$xs: 0 !default;
-$sm: 576px !default;
+$xs: 0px !default;
+$xs1: 280px !default;
+$xs2: 320px !default;
+$xs3: 360px !default;
+$xs4: 375px !default;
+$sm3: 411px !default;
+$sm2: 500px !default;
+$sm: 580px !default;
 $md: 768px !default;
 $lg: 992px !default;
 $xl: 1200px !default;
@@ -27,3 +33,12 @@ $placeholder-color: #363946;
 $white: #fff;
 $black: #363946;
 $error: #db3232;
+$orange: #FF883E;
+
+$dark-bg:#292725;
+$light-bg:#F3F6F8;
+$badge-color: #7DC63F;
+$button-color: #002868;
+$container-bg:#FFFFFF;
+$input-bg: #111112;
+$text-color: #000000;
