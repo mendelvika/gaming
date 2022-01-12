@@ -51,11 +51,20 @@
         </section>
         <section class="card-section" id="casino">
             <div class="card">
+                <div class="card-logo">
+                    <img class="lazy" data-src="./img/main-screen/draft-kings-logo.png" alt="" />
+                </div>
                 <div class="card-text"> 
                     <div class="card-text_bold">Deposit With Our Exclusive Promo Code ABET250 for $250 Bonus</div>
                 </div>
                 <div class="card-ratet">
-                    <div class="card-num">9.9</div>
+                    <div class="card-rate-number">
+                        <svg viewBox="0 0 36 36">
+
+                            <path class="score_vector" stroke-dasharray="99, 100" stroke-dashoffset="4" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                        </svg>
+                        <span class="score_number">9.9</span>
+                    </div>
                     <div class="card-stars">
                         <ul class="list-inline rating-list" data-rate="5">
                             <li class="fa-star">
@@ -118,11 +127,11 @@
         <div class="sections-divider"></div>
         <section class="tags">
             <div class="tags-wrapper">
-                <div class="tags-item">Details</div>
-                <div class="tags-item">Popular slots</div>
-                <div class="tags-item">Rewiev</div>
+                <a href="#details" class="tags-item yak">Details</a>
+                <a href="#popular" class="tags-item yak">Popular slots</a>
+                <a href="#rewiev" class="tags-item yak">Rewiev</a>
             </div>
-            <div class="details">
+            <div class="details" id="details">
                 <h2 class="h2">Details</h2>
                 <div class="details-table">
                     <div class="details-table__row">
@@ -168,7 +177,7 @@
                 </div>
             </div>
         </section>
-        <section class="top-sites" id="slots">
+        <section class="top-sites" id="popular">
             <h2 class="h2">MOST POPULAR SLOTS AT DRAFTKINGS</h2>
             <div class="top-card__overflow">
                 <div class="top-card__container">
@@ -332,7 +341,7 @@
                     <div class="pros-cons__title">Cons</div>
                     <div class="pros-cons__desc cons-list">
                         <ul>
-                            <li><img src="./img/icons/cons.svg"/>Some of the Betting Options can Be Overly Complicated</li>
+                            <li><img class="lazy" data-src="./img/icons/cons.png"/>Some of the Betting Options can Be Overly Complicated</li>
                         </ul>
                     </div>
                 </div>

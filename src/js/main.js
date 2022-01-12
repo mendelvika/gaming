@@ -30,6 +30,12 @@ $(".home_link").click(function (e) {
     $('.header_menu').removeClass('active');
 });
 
+$(".yak").click(function (e) {
+    e.preventDefault();
+    var aid = $(this).attr("href");
+    $('html,body').animate({scrollTop: ($(aid).offset().top - 70)}, 'slow');
+});
+
 $(".fa-star").on("mouseover", function () {
     $(this).parent().attr('data-rate', ($(this).index() + 1))
 })

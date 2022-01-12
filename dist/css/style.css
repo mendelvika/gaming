@@ -1897,11 +1897,16 @@ a {
       .main-screen .main-title {
         font-size: 41px;
         max-width: 504px; }
+      .main-screen .undertitle {
+        margin-top: 10px;
+        margin-bottom: 10px; }
       .main-screen__right {
         padding-left: 0; }
       .main-screen__bg img {
         width: 122%; } }
   @media (max-width: 767px) {
+    .main-screen__right {
+      display: none; }
     .main-screen__wrapper_after-text_item {
       font-size: 12px;
       width: 100%;
@@ -2079,7 +2084,8 @@ a {
     height: 90px;
     overflow: hidden;
     border-radius: 6px;
-    text-align: center; }
+    text-align: center;
+    display: none; }
     .card-logo img {
       max-width: 100%;
       max-height: 100%; }
@@ -2170,23 +2176,21 @@ a {
         -ms-flex-align: center;
             align-items: center; }
     .card-rate-number {
-      width: 70px;
-      height: 70px;
       position: relative;
-      font-size: 30px;
+      font-size: 50px;
       font-weight: 600;
       text-align: center;
-      line-height: 70px; }
+      line-height: 70px;
+      margin-right: 10px; }
       .card-rate-number svg {
         width: 100%;
-        height: 100%; }
+        height: 100%;
+        display: none; }
         .card-rate-number svg path {
           stroke-width: 2.5;
           stroke-linecap: square;
           fill: none; }
       .card-rate-number .score_number {
-        position: absolute;
-        top: 2px;
         left: 0;
         width: 100%; }
       .card-rate-number .score__bg {
@@ -2335,13 +2339,18 @@ a {
       .card-ratet {
         font-size: 14px; }
       .card-rate-number {
-        width: 50px;
-        height: 50px;
-        font-size: 18px;
+        font-size: 30px;
         line-height: 50px; } }
   @media (max-width: 992px) {
     .card-section.inner {
-      margin-top: 80px; } }
+      margin-top: 80px; }
+    .card-icon:first-of-type {
+      margin-right: 10px; }
+    .card-icon__title {
+      font-size: 12px; }
+    .card-bonus {
+      width: 130px;
+      font-size: 14px; } }
   @media (max-width: 767px) {
     .card {
       -webkit-box-orient: vertical;
@@ -2352,34 +2361,45 @@ a {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       border-radius: 10px;
-      padding: 15px 15px 41px;
-      background-color: #fff; }
+      padding: 15px 15px;
+      background-color: #fff;
+      border: 1px solid rgba(20, 80, 116, 0.4);
+      margin-bottom: 0; }
       .card_small {
         background: #F3F6F8;
         padding: 20px; }
         .card_small .card-ratet {
           width: auto; }
       .card-section {
-        margin-top: 5px; }
+        margin-top: 10px;
+        margin-bottom: 20px; }
         .card-section.inner {
           margin-top: 70px; }
       .card-container {
         height: 130px; }
       .card-logo {
-        margin-right: auto; }
+        margin-right: auto;
+        width: 110px;
+        height: 54px;
+        display: inline-block; }
       .card-rate-number {
         position: absolute;
-        top: 28px;
-        right: 14px;
+        top: 0;
+        right: -44px;
         width: 34px;
         height: 34px;
         font-size: 15px;
         line-height: 34px; }
+        .card-rate-number svg {
+          display: inline-block; }
+        .card-rate-number .score_number {
+          position: absolute;
+          top: 2px; }
       .card-ratet {
         width: 90px;
         font-size: 10px;
         position: absolute;
-        top: 21px;
+        top: 26px;
         right: 61px;
         text-align: left; }
       .card-text {
@@ -2405,7 +2425,28 @@ a {
         margin-top: 16px;
         width: 100%; }
       .card-badge img {
-        margin-right: 6px; } }
+        margin-right: 6px; }
+      .card-icons {
+        -webkit-box-ordinal-group: 11;
+            -ms-flex-order: 10;
+                order: 10;
+        margin-top: 15px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%; }
+      .card-icon {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row; }
+        .card-icon__img {
+          width: 29px;
+          height: 29px;
+          margin-bottom: 0;
+          margin-right: 6px; }
+          .card-icon__img img {
+            width: 17px; } }
   @media (max-width: 500px) {
     .card {
       position: relative;
@@ -2629,6 +2670,10 @@ a {
   height: 3px;
   background: #E7EFFB;
   margin: 40px auto; }
+  @media (max-width: 767px) {
+    .sections-divider {
+      margin-top: 10px;
+      margin-bottom: 10px; } }
 
 .top-card {
   background: white;
@@ -2921,7 +2966,11 @@ a {
   color: #002868;
   text-align: center;
   margin-right: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none; }
+  .tags-item:hover {
+    text-decoration: none; }
 
 @media (max-width: 580px) {
   .tags-item {
