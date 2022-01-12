@@ -220,10 +220,6 @@
       font-size: 41px;
       max-width: 504px;
     }
-
-    .undertitle {
-      display: none;
-    }
  
     &__right {
       padding-left: 0;
@@ -268,7 +264,8 @@
   }
   @include breakpoint-max($sm) {
     .undertitle {
-      display: none;
+      font-size: 14px;
+      line-height: 19px;
     }
     &__img {
       display: none;
@@ -748,6 +745,13 @@ line-height: 30px;
     border-radius: 10px;
     padding: 15px 15px 41px;
     background-color: #fff;
+    &_small{
+      background: #F3F6F8;
+      padding: 20px;
+      .card-ratet{
+        width: auto;
+      }
+    }
     &-section {
       margin-top: 5px;
       &.inner {
@@ -840,6 +844,21 @@ line-height: 30px;
 
       &_reverse-skewed {
         transform: none;
+      }
+    }
+    &_small{
+      .card-ratet{
+        right: 20px;
+        top: 30px;
+      }
+      .card-bonus{
+        width: 100%;
+        margin-top: 30px;
+      }
+      .card-num{
+        font-size: 32px;
+        line-height: 44px;
+        margin-right: 6px;
       }
     }
     &-text {
@@ -1100,12 +1119,7 @@ line-height: 30px;
       line-height: 25px;
       display: flex;
       align-items: center;
-      &::after{
-        display: block;
-        content: '';
-        background-image: url(../../img/icons/arrow-right-link.svg);
-        width: 24px;
-        height: 14px;
+      img{
         margin-left: 10px;
       }
     }
@@ -1186,7 +1200,7 @@ line-height: 30px;
     &__overflow {
       overflow: scroll;
       position: relative;
-      height: 390px;
+      height: 260px;
     }
     &__img {
       height: 140px;
@@ -1218,7 +1232,7 @@ line-height: 30px;
   }
   @include breakpoint-max($md) {
     &__overflow {
-      height: 220px;
+      height: 250px;
     }
   }
 }
@@ -1439,10 +1453,19 @@ line-height: 30px;
     margin-right: 20px;
     cursor: pointer;
   }
+  @include breakpoint-max($sm){
+    &-item{
+      padding: 8px 16px;
+      font-size: 14px;
+      line-height: 18px;
+      margin-right: 8px;
+    }
+  }
 }
 
 .details{
   overflow-x: scroll;
+  padding-bottom: 30px;
   &-table{
     background: #FFFFFF;
     border: 1px solid rgba(20, 80, 116, 0.5);
@@ -1518,7 +1541,7 @@ line-height: 30px;
     display: flex;
     justify-content: space-between;
     &__col{
-      width: 50%;
+      width: 49%;
       max-width: 470px;
     }
     &__title{
@@ -1545,25 +1568,11 @@ line-height: 30px;
       &::before{
         background: #42A306;
     }
-    ul{
-      li{
-        &::before{
-          background-image: url(../../img/icons/pros.svg);
-        }
-      }
-    }
   }
     .cons-list{
       background: rgba(237, 48, 48, 0.1);
       &::before{
         background: #ED3030; 
-    }
-    ul{
-      li{
-        &::before{
-          background-image: url(../../img/icons/cons.svg);
-        }
-      }
     }
   }
     ul{
@@ -1576,8 +1585,10 @@ line-height: 30px;
         color: #000000;
         margin: 15px 0;
         max-width: 316px;
-        &::before{
-          background: transparent;
+        &:before{
+          display: none;
+        }
+        img{
           height: 12px;
           width: 12px;
           border-radius: unset;
@@ -1588,5 +1599,29 @@ line-height: 30px;
         }
       }
       
+    }
+    @include breakpoint-max($md){
+      flex-direction: column;
+      &__col{
+        width: 100%;
+        max-width: 100%;
+        &:first-of-type{
+          margin-bottom: 20px;
+        }
+      }
+      &__desc{
+        margin: 10px 0px;
+        &::before{
+          height: 112px;
+        }
+      }
+      ul{
+        li{
+          max-width: 100%;
+          font-size: 14px;
+          line-height: 19px;
+          margin: 10px 0px;
+        }
+      }
     }
   }
