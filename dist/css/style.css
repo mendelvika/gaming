@@ -2331,6 +2331,7 @@ a {
       .card-bonus {
         line-height: 42px;
         margin-top: 16px;
+        margin-bottom: 0;
         width: 100%; }
       .card-badge img {
         margin-right: 6px; } }
