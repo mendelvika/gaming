@@ -1509,7 +1509,7 @@ a {
             align-items: center; }
   .header_menu {
     width: 100%;
-    max-width: 478px;
+    max-width: 300px;
     background-color: #F3F6F8;
     margin-left: auto;
     border-radius: 70px;
@@ -1531,7 +1531,7 @@ a {
       padding-top: 10px;
       padding-bottom: 10px; }
       .header .logo {
-        width: 100px; }
+        width: 120px; }
       .header_menu {
         padding-top: 30px;
         width: auto;
@@ -1955,7 +1955,7 @@ a {
   margin-top: 50px;
   font-weight: 600;
   margin-bottom: 30px; }
-  @media (max-width: 580px) {
+  @media (max-width: 768px) {
     .h2 {
       margin-top: 20px;
       margin-bottom: 20px; } }
@@ -1977,8 +1977,7 @@ a {
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 20px; }
+          justify-content: space-between; }
   .card-section {
     position: relative;
     z-index: 2;
@@ -2119,6 +2118,9 @@ a {
     text-align: center;
     text-decoration: none;
     border-radius: 10px; }
+    .card-bonus img {
+      margin-left: 5px;
+      width: 16px; }
     .card-bonus:hover {
       color: white; }
     .card-bonus__content {
@@ -2293,7 +2295,8 @@ a {
     padding: 15px 30px; }
     .card_small .card-logo {
       width: 104px;
-      height: auto; }
+      height: auto;
+      display: inline-block; }
     .card_small .card-bonus {
       height: 50px;
       width: 200px;
@@ -2303,7 +2306,7 @@ a {
       line-height: 49px; }
   @media (max-width: 1200px) {
     .card {
-      height: 140px; }
+      height: 100px; }
       .card-bonus {
         font-size: 18px;
         line-height: 30px;
@@ -2344,6 +2347,9 @@ a {
   @media (max-width: 992px) {
     .card-section.inner {
       margin-top: 80px; }
+    .card-section {
+      margin-top: 10px;
+      margin-bottom: 10px; }
     .card-icon:first-of-type {
       margin-right: 10px; }
     .card-icon__title {
@@ -2367,9 +2373,21 @@ a {
       margin-bottom: 0; }
       .card_small {
         background: #F3F6F8;
-        padding: 20px; }
+        padding: 20px;
+        border: none; }
         .card_small .card-ratet {
-          width: auto; }
+          width: auto;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start; }
+        .card_small .card-num {
+          font-size: 32px;
+          line-height: 28px; }
+        .card_small .text-small {
+          font-size: 10px; }
+        .card_small .rating-list {
+          margin-top: 0;
+          margin-bottom: 2px; }
       .card-section {
         margin-top: 10px;
         margin-bottom: 20px; }
@@ -2384,17 +2402,17 @@ a {
         display: inline-block; }
       .card-rate-number {
         position: absolute;
-        top: 0;
-        right: -44px;
-        width: 34px;
-        height: 34px;
-        font-size: 15px;
+        top: 3px;
+        right: -55px;
+        width: 36px;
+        height: 36px;
+        font-size: 14px;
         line-height: 34px; }
         .card-rate-number svg {
           display: inline-block; }
         .card-rate-number .score_number {
           position: absolute;
-          top: 2px; }
+          top: 1px; }
       .card-ratet {
         width: 90px;
         font-size: 10px;
@@ -2473,10 +2491,6 @@ a {
       .card_small .card-bonus {
         width: 100%;
         margin-top: 30px; }
-      .card_small .card-num {
-        font-size: 32px;
-        line-height: 44px;
-        margin-right: 6px; }
       .card-text_small_modal {
         width: auto;
         top: 15px;
@@ -2670,6 +2684,10 @@ a {
   height: 3px;
   background: #E7EFFB;
   margin: 40px auto; }
+  @media (max-width: 991px) {
+    .sections-divider {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
   @media (max-width: 767px) {
     .sections-divider {
       margin-top: 10px;
@@ -2952,6 +2970,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 580px) {
+    .tags-wrapper {
+      height: 36px; } }
 
 .tags-item {
   padding: 10px 30px;
@@ -3126,5 +3147,15 @@ a {
         font-size: 14px;
         line-height: 19px;
         margin: 10px 0px; } }
+
+.mob {
+  display: none; }
+  @media (max-width: 767px) {
+    .mob {
+      display: inline-block; } }
+
+@media (max-width: 767px) {
+  .mob-hide {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
