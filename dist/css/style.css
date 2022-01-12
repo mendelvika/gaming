@@ -2059,15 +2059,28 @@ a {
     .card-img_height img {
       height: 160px; }
   .card-bonus {
-    width: 220px;
+    width: 200px;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     background-color: #002868;
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px; }
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 35px; }
+    .card-bonus img {
+      width: 21px;
+      margin-left: 6px; }
     .card-bonus:hover {
       color: white; }
     .card-bonus__content {
@@ -2232,7 +2245,8 @@ a {
       .card-bonus {
         font-size: 14px;
         line-height: 46px;
-        width: 130px; }
+        width: 130px;
+        margin-bottom: 25px; }
       .card-text {
         max-width: 200px; }
       .card-logo {
@@ -2786,6 +2800,27 @@ a {
 
 .more {
   display: none; }
+
+@media (max-width: 767px) {
+  .hide-mob {
+    display: none; } }
+
+.review-page {
+  font-size: 10px;
+  line-height: 1;
+  font-weight: bold; }
+  @media (min-width: 768px) {
+    .review-page {
+      position: absolute;
+      right: 35px;
+      top: 90px;
+      font-size: 14px; } }
+  @media (min-width: 1200px) {
+    .review-page {
+      position: absolute;
+      right: 75px;
+      top: 100px;
+      font-size: 18px; } }
 
 @-webkit-keyframes score_progress {
   0% {
