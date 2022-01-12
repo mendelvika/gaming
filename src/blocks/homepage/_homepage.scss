@@ -254,7 +254,7 @@
     .main-title {
       font-size: 26px;
       line-height: 35px;
-      width: 250px;
+      width: 260px;
 
       &_orange {
         font-size: 42px;
@@ -303,6 +303,11 @@
       }
     }
 
+  }
+  @include breakpoint-max($xs4) {
+    .main-title {
+      width: 250px;
+    }
   }
 }
 
@@ -768,6 +773,7 @@
     &-bonus {
       line-height: 42px;
       margin-top: 16px;
+      margin-bottom: 0;
       width: 100%;
     }
     &-badge {

@@ -1905,7 +1905,7 @@ a {
     .main-screen .main-title {
       font-size: 26px;
       line-height: 35px;
-      width: 250px; }
+      width: 260px; }
       .main-screen .main-title_orange {
         font-size: 42px;
         line-height: 46px; }
@@ -1935,6 +1935,9 @@ a {
         top: 9px;
         width: 110px;
         max-width: 240px; } }
+  @media (max-width: 375px) {
+    .main-screen .main-title {
+      width: 250px; } }
 
 .h2 {
   margin-top: 50px;
@@ -2331,6 +2334,7 @@ a {
       .card-bonus {
         line-height: 42px;
         margin-top: 16px;
+        margin-bottom: 0;
         width: 100%; }
       .card-badge img {
         margin-right: 6px; } }
