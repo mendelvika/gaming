@@ -1,63 +1,119 @@
 h1 {
-  font-size: 44px;
-  line-height: 1.38;
+    font-size: 70px;
+    line-height: 123%;
+    font-weight: 900;
+    @include breakpoint-max($md) {
+        font-size: 32px;
+    }
 }
+
 h2 {
-  font-size: 40px;
-  line-height: 1.375;
-  @include breakpoint-max($md){
-    font-size: 28px;
-  }
+    font-size: 60px;
+    line-height: 80%;
+    width: fit-content;
+    white-space: nowrap;
+    @include breakpoint-max($md) {
+        font-size: 28px;
+    }
 }
+
 h3 {
-  font-size: 30px;
-  line-height: $line-height;
-  @include breakpoint-max($md){
-    font-size: 24px;
-  }
+    font-size: 30px;
+    line-height: $line-height;
+    @include breakpoint-max($md) {
+        font-size: 24px;
+    }
 }
-h4, .h4 {
-  font-size: 22px;
-  line-height: 30px;
+
+h4,
+.h4 {
+    font-size: 22px;
+    line-height: 30px;
 }
-h5, .h5 {
-  font-size: 18px;
-  line-height: 25px;
+
+h5,
+.h5 {
+    font-size: 18px;
+    line-height: 25px;
 }
+
 h6 {
-  font-size: #{$h6-font-size}px;
-  line-height: $line-height;
+    font-size: #{$h6-font-size}px;
+    line-height: $line-height;
 }
 
-ul{
-  margin: 20px 0;
-  color: $text-color;
-  list-style: none;
-  li{
-      margin-bottom: 10px;
-      display: flex;
-      align-items: flex-start;
-      &:before{
-          content: '';
-          display: block;
-          background: $button-color;
-          width: 12px;
-          min-width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          margin: 6px 40px 0px 0px;
-      }
-  }
+p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: $text-color;
+    margin: 20px 0;
+    @include breakpoint-max($md) {
+        font-size: 14px;
+        line-height: 18px;
+        margin: 10px 0;
+    }
 }
 
-p{
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: $text-color;
-  margin: 20px 0;
-  @include breakpoint-max($md){
-    font-size: 14px;
-    line-height: 18px;
-  }
+a {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+        color: $primary;
+    }
+}
+
+.title {
+    font-family: $font-title;
+    font-weight: 900;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    .line {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+    }
+    &_white {
+        color: $white;
+        .line {
+            background-color: $primary;
+        }
+    }
+    &_black {
+        color: $black;
+        .line {
+            background-color: $black;
+        }
+    }
+    .circle {
+        width: 18px;
+        min-width: 18px;
+        height: 18px;
+        margin: 0px 8px;
+        border-radius: 50%;
+        background-color: $primary;
+    }
+}
+
+.text {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $font-text;
+    font-weight: 200;
+    max-width: 862px;
+    margin: 40px 0px 0px 90px;
+    &_white {
+        color: $white;
+    }
+    &_black {
+        color: $black;
+    }
+    @include breakpoint-max($md) {
+        margin: 20px 0px 0px 0px;
+    }
 }

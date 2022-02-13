@@ -1,0 +1,87 @@
+.form-section {
+    background-color: $white;
+    padding: 80px 0px 60px;
+    &__row {
+        width: 100%;
+        display: flex;
+        max-width: 1198px;
+    }
+    &__col {
+        &:first-of-type {
+            width: 45%;
+        }
+        &:last-of-type {
+            width: 55%;
+        }
+    }
+    @include breakpoint-max($lg) {
+        &__row {
+            flex-wrap: wrap;
+        }
+        &__col {
+            &:first-of-type {
+                width: 100%;
+            }
+            &:last-of-type {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.form {
+    margin: 30px 0px;
+    .note {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    &__wrapper {
+        max-width: 610px;
+    }
+    &__contacts {
+        max-width: 420px;
+        a {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 34px;
+            color: $black;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    &__header {
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 31px;
+        font-family: $font-title-sm;
+    }
+    &__input {
+        border-bottom: 1px solid $black;
+        padding: 10px 20px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 21px;
+        color: $black;
+        max-width: 568px;
+        &::placeholder {
+            color: $black;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0px;
+    }
+    @include breakpoint-max($lg) {
+        &__wrapper {
+            margin-top: 30px;
+        }
+    }
+}
