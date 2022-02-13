@@ -3,7 +3,7 @@
     position: relative;
     z-index: 4;
     background-color: $black-bg;
-    background-image: url(/img/main-screen-bg.png);
+    background-image: url(../img/main-screen-bg.png);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -112,7 +112,7 @@
 .partners {
     display: flex;
     padding: 30px;
-    background-image: url(/img/partners-bg.png);
+    background-image: url(../img/partners-bg.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

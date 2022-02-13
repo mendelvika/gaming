@@ -1638,7 +1638,7 @@ body {
         transition: .4s;
         z-index: 100;
         background-color: #000000;
-        background-image: url(/img/main-screen-bg.png);
+        background-image: url(../img/main-screen-bg.png);
         background-position: bottom -100px center;
         background-size: cover;
         background-repeat: no-repeat; }
@@ -1878,7 +1878,7 @@ body {
   position: relative;
   z-index: 4;
   background-color: #000000;
-  background-image: url(/img/main-screen-bg.png);
+  background-image: url(../img/main-screen-bg.png);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1989,7 +1989,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 30px;
-  background-image: url(/img/partners-bg.png);
+  background-image: url(../img/partners-bg.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
