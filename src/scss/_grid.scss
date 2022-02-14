@@ -16,7 +16,6 @@
     //}
     @include breakpoint-min($lg) {
         max-width: $container-lg;
-        left: 60px;
     }
     @include breakpoint-min($xl) {
         max-width: $container-xl;

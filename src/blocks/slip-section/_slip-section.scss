@@ -27,3 +27,33 @@
         }
     }
 }
+
+.slider {
+    width: 40%;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.slider {
+    &_item {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        text-align: center;
+        //min-width: 293px;
+        img {
+            margin: auto;
+        }
+    }
+    &_arrows {
+        display: flex;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+    .prev {
+        margin-right: 10px;
+        img {
+            transform: rotate(180deg);
+        }
+    }
+}
