@@ -84,7 +84,7 @@ body {
     box-sizing: border-box;
     border-radius: 8px;
     color: $btn-color;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 26px;
     text-decoration: none;
@@ -104,5 +104,11 @@ body {
         outline: 0;
         background-color: #E40A0A;
         box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.29);
+    }
+    @include breakpoint-max($sm) {
+        width: 160px;
+        padding: 8px 40px;
+        font-size: 16px;
+        line-height: 23px;
     }
 }

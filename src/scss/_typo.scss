@@ -113,7 +113,12 @@ a {
     &_black {
         color: $black;
     }
-    @include breakpoint-max($md) {
+    @include breakpoint-max($xl) {
+        margin: 40px 0px 0px 40px;
+    }
+    @include breakpoint-max($lg) {
         margin: 20px 0px 0px 0px;
+        font-size: 16px;
+        line-height: 21px;
     }
 }

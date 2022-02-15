@@ -3,19 +3,11 @@
     position: relative;
     z-index: 4;
     background-color: $black-bg;
-    //background-image: url(../img/main-screen-bg.png);
-    //background-position: right bottom;
-    //background-repeat: no-repeat;
-    //background-size: contain;
     position: relative;
     .btn {
         margin-top: 54px;
     }
-    &__img {
-        max-width: 368px;
-    }
     &__wrapper {
-        position: relative;
         z-index: 1;
         display: flex;
         align-items: center;
@@ -24,13 +16,45 @@
     &__left {
         max-width: 838px;
     }
-    @include breakpoint-max($md) {
+    &__bg {
+        position: absolute;
+        width: 60%;
+        height: 100%;
+        right: 0px;
+        bottom: 0px;
+        z-index: -1;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    @include breakpoint-max($lg) {
         padding-top: 68px;
         background-size: cover;
         &__wrapper {
             padding: 80px 0px 160px;
         }
+        &__bg {
+            width: 100%;
+            left: 0px;
+        }
     }
+}
+
+.logo {
+    width: 272px;
+    img {
+        max-width: 100%;
+    }
+    @include breakpoint-max($md) {
+        width: 217px;
+    }
+}
+
+.anchor {
+    position: relative;
+    top: -100px;
 }
 
 .scroll-down {
@@ -96,6 +120,7 @@
     }
     &__list {
         padding-left: 0px;
+        margin-top: 16px;
         li {
             margin-bottom: 10px;
             color: $white;
@@ -111,6 +136,19 @@
                 margin-right: 10px;
                 margin-top: 12px;
             }
+        }
+    }
+    @include breakpoint-max($lg) {
+        background-image: none;
+        width: 100%;
+        overflow-x: scroll;
+        padding: 0px 0px 15px 0px;
+        &__item {
+            min-width: 269px;
+            padding: 30px 16px;
+            margin-right: 20px;
+            border-radius: 10px;
+            background-image: url(../img/glassmorf-dark-bg-sm.png);
         }
     }
 }
@@ -132,11 +170,24 @@
             height: 100%;
         }
     }
+    @include breakpoint-max(1600px) {
+        overflow-x: scroll;
+    }
+    @include breakpoint-max($md) {
+        padding: 15px 10px;
+        margin-top: 40px;
+        &__logo {
+            width: 140px;
+            height: 50px;
+            margin-right: 6px;
+        }
+    }
 }
 
 .white-section {
     background-color: $white;
     position: relative;
+    overflow-x: hidden;
     &__wrapper {
         padding: 60px 0px;
     }
@@ -158,9 +209,22 @@
             height: 427px;
             top: 50%;
             transform: translateY(-50%);
-            width: 714px;
+            max-width: 714px;
             img {
                 height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 10px 0px 0px 10px;
+            }
+        }
+        @include breakpoint-max(1700px) {
+            padding: 80px 0px;
+            .white-section__wrapper {
+                width: 50%;
+                padding-right: 16px;
+            }
+            .our-vision-img {
+                width: 50%;
             }
         }
         @include breakpoint-max($lg) {
@@ -168,29 +232,50 @@
             .our-vision-img {
                 position: static;
                 transform: translateY(0%);
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                img {
+                    border-radius: 10px 10px 0px 0px;
+                }
             }
             .white-section__wrapper {
                 padding: 0px 0px 34px;
+                width: 100%;
             }
+        }
+        @include breakpoint-max($lg) {
+            padding: 30px 0px 0px 0px;
         }
     }
     @include breakpoint-max($lg) {
         &__img-line {
             height: 34px;
+            margin-bottom: 32px;
             img {
                 height: 100%;
             }
+        }
+    }
+    @include breakpoint-max($md) {
+        &__wrapper {
+            padding: 30px 0px;
         }
     }
 }
 
 .black-section {
     background-color: $black;
+    overflow-x: hidden;
     &__wrapper {
         padding: 60px 0px 80px;
     }
+    @include breakpoint-max($md) {
+        &__wrapper {
+            padding: 30px 0px;
+        }
+    }
 }
-
 
 @keyframes down {
     0% {
