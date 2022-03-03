@@ -13,7 +13,7 @@ h2 {
     width: fit-content;
     white-space: nowrap;
     @include breakpoint-max($md) {
-        font-size: 28px;
+        font-size: 30px;
     }
 }
 
@@ -49,7 +49,7 @@ p {
     color: $text-color;
     margin: 20px 0;
     @include breakpoint-max($md) {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 18px;
         margin: 10px 0;
     }

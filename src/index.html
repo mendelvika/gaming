@@ -24,15 +24,15 @@
                 <div class="main-screen__left">
                     <h1 class="title title_white">WE DELIVER HIGH-VALUE LEADS TO IGAMING OPERATORS
                     </h1>
-                    <a class="btn btn_primary" href="">JOIN US</a>
+                    <a class="btn btn_primary yak" href="#form">JOIN US</a>
                 </div>
             </div>
         </div>
         <div class="scroll-down">
-            <img src="img/scroll-down.svg" />
+            <img class="lazy" data-src="img/scroll-down.svg" />
         </div>
         <div class="main-screen__bg">
-            <img class="lazy" src="img/main-screen-bg.png" />
+            <img class="lazy" data-src="img/main-screen-bg.png" />
         </div>
     </section>
     <a class="anchor" id="our-brands"></a>
@@ -52,31 +52,31 @@
                             <div class="autoplay">
                                 <div>
                                     <div class="slider_item">
-                                        <img data-lazy="./img/slider/TS.png" alt="">
+                                        <img data-lazy="./img/slider/ts-1.svg" alt="">
                                     </div>
                                 </div>
                                 <div>
                                     <div class="slider_item">
-                                        <img data-lazy="./img/slider/TS.png" alt="">
+                                        <img data-lazy="./img/slider/ts-2.svg" alt="">
                                     </div>
                                 </div>
                                 <div>
                                     <div class="slider_item">
-                                        <img data-lazy="./img/slider/TS.png" alt="">
+                                        <img data-lazy="./img/slider/ts-1.svg" alt="">
                                     </div>
                                 </div>
                                 <div>
                                     <div class="slider_item">
-                                        <img data-lazy="./img/slider/TS.png" alt="">
+                                        <img data-lazy="./img/slider/ts-2.svg" alt="">
                                     </div>
                                 </div>
                             </div>
                             <div class="slider_arrows">
                                 <div class="prev">
-                                    <img src="./img/slider/arrow.svg" alt="">
+                                    <img class="lazy" data-src="./img/slider/arrow.svg" alt="">
                                 </div>
                                 <div class="next">
-                                    <img src="./img/slider/arrow.svg" alt="">
+                                    <img class="lazy" data-src="./img/slider/arrow.svg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,8 @@
             </div>
         </div>
         <div class="white-section__img-line">
-            <img src="img/play-serious.svg" />
+            <img class="lazy" data-src="img/play-serious.svg" />
+            <img class="lazy" data-src="img/play-serious.svg" />
         </div>
     </section>
     <a class="anchor" id="business-model"></a>
@@ -165,10 +166,10 @@
             </div>
         </div>
         <div class="white-section__img-line">
-            <img src="img/play-serious.svg" />
+            <img class="lazy" data-src="img/play-serious.svg" />
         </div>
         <div class="our-vision-img">
-            <img src="img/our-vision.png" />
+            <img class="lazy" data-src="img/our-vision.png" />
         </div>
     </section>
     <a class="anchor" id="partners"></a>
@@ -185,25 +186,19 @@
                     and engages with the content that he sees on our sites, and our results suggest we do an excellent job of building that trust!</p>
                 <div class="partners">
                     <div class="partners__logo">
-                        <img src="img/partners/partner1.png" />
+                        <img class="lazy" data-src="img/partners/partner1.png" />
                     </div>
                     <div class="partners__logo">
-                        <img src="img/partners/partner2.png" />
+                        <img class="lazy" data-src="img/partners/partner4.png" />
                     </div>
                     <div class="partners__logo">
-                        <img src="img/partners/partner3.png" />
+                        <img class="lazy" data-src="img/partners/partner2.png" />
                     </div>
                     <div class="partners__logo">
-                        <img src="img/partners/partner4.png" />
+                        <img class="lazy" data-src="img/partners/partner3.png" />
                     </div>
                     <div class="partners__logo">
-                        <img src="img/partners/partner5.png" />
-                    </div>
-                    <div class="partners__logo">
-                        <img src="img/partners/partner6.png" />
-                    </div>
-                    <div class="partners__logo">
-                        <img src="img/partners/partner7.png" />
+                        <img class="lazy" data-src="img/partners/partner5.png" />
                     </div>
                 </div>
             </div>
@@ -242,7 +237,7 @@
                         <p>for general and media inquiries .</p>
                     </div>
                 </div>
-                <div class="form-section__col">
+                <div class="form-section__col" id="form">
                     <div class="form__wrapper">
                         <div class="form__header">
                             Or fill out the form, and we will contact you back
@@ -275,7 +270,7 @@
     @@include('blocks/footer/footer.html')
 
     <script src="js/vendor.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $('.autoplay').slick({
@@ -283,6 +278,7 @@
                 centerMode: false,
                 slidesToScroll: 1,
                 slidesToShow: 3,
+                infinite: true,
                 variableWidth: true,
                 prevArrow: $('.prev'),
                 nextArrow: $('.next'),

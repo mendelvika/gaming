@@ -23,11 +23,11 @@ $('.main-screen__wrapper_after-text_modal_close').click(() => {
     $('.main-screen__wrapper_after-text_modal').fadeOut();
 })
 
-$(".home_link").click(function(e) {
+$(".header_menu_link a").click(function(e) {
     e.preventDefault();
     var aid = $(this).attr("href");
     $('html,body').animate({ scrollTop: ($(aid).offset().top - 70) }, 'slow');
-    $('.toggle-button').text('menu');
+    // $('.toggle-button').text('menu');
     $('body, html').removeClass('noscroll');
     $('.header_menu').removeClass('active');
 });

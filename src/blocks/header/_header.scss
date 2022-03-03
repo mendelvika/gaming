@@ -105,7 +105,7 @@
             display: flex;
         }
         &_menu {
-            padding-top: 30px;
+            padding-top: 60px;
             width: auto;
             max-width: 100%;
             margin-left: 0;
@@ -120,7 +120,7 @@
             z-index: 100;
             background-color: $black;
             background-image: url(../img/main-screen-bg.png);
-            background-position: bottom -100px center;
+            background-position: bottom -220px center;
             background-size: cover;
             background-repeat: no-repeat;
             &.active {
@@ -131,7 +131,9 @@
                 display: block;
                 line-height: 44px;
                 margin-left: 20px;
+                font-size: 20px;
                 margin-right: 20px;
+                margin-bottom: 5px;
                 text-decoration: none;
             }
             &.footer_menu {
@@ -139,6 +141,7 @@
             }
             &_ul {
                 flex-direction: column;
+                margin-bottom: 20px;
             }
         }
     }

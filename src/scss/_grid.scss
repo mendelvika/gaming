@@ -3,8 +3,8 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-right: $grid-gutter / 2;
-    padding-left: $grid-gutter / 2;
+    padding-left: 20px;
+    padding-right: 20px;
     min-width: 320px;
     //@include breakpoint-min($sm) {
     //  max-width: $container-sm;
@@ -15,6 +15,8 @@
     //}
     @include breakpoint-min($lg) {
         max-width: $container-lg;
+        padding-right: $grid-gutter / 2;
+        padding-left: $grid-gutter / 2;
     }
     @include breakpoint-min($xl) {
         max-width: $container-xl;

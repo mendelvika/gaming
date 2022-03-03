@@ -17,6 +17,7 @@
         margin-left: auto;
         text-align: center;
         display: flex;
+        margin-right: -20px;
         &_link {
             margin-left: 20px;
             margin-right: 20px;
@@ -73,7 +74,8 @@
         &_menu {
             margin-top: 30px;
             padding-left: 0px;
-            margin-left: none;
+            margin-left: 0;
+            margin-right: 0;
             flex-wrap: wrap;
             justify-content: space-evenly;
             &_link {

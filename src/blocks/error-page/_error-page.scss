@@ -47,6 +47,7 @@
         .title {
             font-size: 50px;
             line-height: 80%;
+            margin-right: 15px;
         }
         .title-sm {
             font-size: 28px;
@@ -67,6 +68,9 @@
         &__text {
             flex-wrap: wrap;
             justify-content: center;
+            .title-sm {
+                margin-top: 10px;
+            }
         }
     }
 }
