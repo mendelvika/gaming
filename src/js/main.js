@@ -60,6 +60,13 @@ $(".header_menu_link.hash").click(function (e) {
     $('.header_menu').removeClass('active');
 });
 
+if ($('div').hasClass('moreLang')) {
+    $(".moreLang").click(() => {
+        $(".moreLang").hide();
+        $('.otherLang').show();
+    });
+}
+
 $(".review_anchors_item").click(function (e) {
     e.preventDefault();
     var aid = $(this).attr("href");

@@ -19,7 +19,7 @@
   }
   &_menu {
     width: 100%;
-    max-width: 456px;
+    max-width: 512px;
     background-color: $light-bg;
     margin-left: auto;
     border-radius: 70px;
@@ -62,16 +62,14 @@
           border-top: 1px solid #E7EFFB;
           padding: 20px 0 10px 20px;
           font-size: 0;
-          text-align: center;
         }
         &_link {
           display: inline-block;
           color: $text-color;
           text-decoration: none;
-          width: 180px;
+          width: 150px;
           font-size: 16px;
           margin-bottom: 10px;
-          text-align: left;
         }
       }
     }

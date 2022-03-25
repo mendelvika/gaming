@@ -474,7 +474,7 @@
     color: white;
     font-size: 20px;
     font-weight: 600;
-    background-color: #002868;
+    background-color: $button-color;
     line-height: 50px;
     text-align: center;
     text-decoration: none;
@@ -572,7 +572,7 @@
       }
 
       .score_vector {
-        stroke: #002868;
+        stroke: $button-color;
         animation: score_progress 1s ease-out forwards;
       }
     }
@@ -660,10 +660,7 @@
         padding: 30px;
         background-color: #fff;
         box-shadow: 2px 2px 14px rgba(21, 33, 100, 0.18);
-        a {
-          font-size: 100%;
-          line-height: 1;
-        }
+
         &_close {
           position: absolute;
           top: 10px;
@@ -813,13 +810,13 @@
       background: #F3F6F8;
       border-radius: 5px;
       padding: 6px 0;
-      //div {
-      //  &:nth-of-type(2) {
-      //    position: relative;
-      //    bottom: 0;
-      //    margin-top: 2px;
-      //  }
-      //}
+      div {
+        &:nth-of-type(2) {
+          position: relative;
+          bottom: 0;
+          margin-top: 2px;
+        }
+      }
 
       &_blue {
         display: none;
@@ -833,12 +830,12 @@
         line-height: 20px;
       }
 
-      //&_small {
-      //  position: absolute;
-      //  bottom: 10px;
-      //  left: 0;
-      //  width: 100%;
-      //}
+      &_small {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+      }
     }
     &-buttons {
       width: 100%;
@@ -928,29 +925,9 @@
   h5 {
     margin-top: 40px;
   }
-  .how-we-rate{
-    &_left {
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 930px;
-    }
-    &_point {
-      &_icon {
-
-        img {
-          width: 50px;
-        }
-      }
-      &_content {
-        p {
-          border-bottom: none;
-        }
-      }
-    }
-  }
 
   &_content {
-    max-width: 930px;
+    max-width: 960px;
     margin-left: auto;
     margin-right: auto;
     p {
