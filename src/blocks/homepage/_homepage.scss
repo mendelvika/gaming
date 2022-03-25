@@ -58,15 +58,17 @@
 }
 
 .main-screen {
-  margin-top: 90px;
+  margin-top: 85px;
   position: relative;
   z-index: 4;
 
   .main-title {
     font-weight: 600;
-    max-width: 700px;
+    max-width: 650px;
     color: $button-color;
-
+    &.about {
+      color: $black;
+    }
     &_orange {
       color: $button-color;
       font-size: 70px;
@@ -86,8 +88,9 @@
   }
 
   .undertitle {
+    font-size: 16px;
+    line-height: 22px;
     margin-top: 10px;
-    margin-bottom: 20px;
     max-width: 700px;
   }
 
@@ -169,6 +172,11 @@
 
   &__left {
     //padding: 40px 0;
+    &.about {
+      .undertitle {
+        display: block;
+      }
+    }
   }
 
   &__circle {
@@ -206,6 +214,11 @@
   &__right {
     margin-left: auto;
     padding-left: 20px;
+    @include breakpoint-max($lg) {
+      &.about {
+        display: none;
+      }
+    }
   }
 
   @include breakpoint-max($xl) {
@@ -218,6 +231,10 @@
     .main-title {
       font-size: 41px;
       max-width: 504px;
+      &.about {
+        max-width: 100%;
+        width: 100%;
+      }
     }
 
     .undertitle {
@@ -252,7 +269,7 @@
       }
     }
     .main-title {
-      font-size: 26px;
+      font-size: 23px;
       line-height: 35px;
       width: 260px;
 
@@ -264,6 +281,11 @@
     &__img {                    
       max-height: 145px;        
     }                           
+
+
+
+
+
   }
   @include breakpoint-max($sm) {
     .undertitle {
@@ -304,11 +326,6 @@
     }
 
   }
-  @include breakpoint-max($xs4) {
-    .main-title {
-      width: 250px;
-    }
-  }
 }
 
 .h2 {
@@ -335,13 +352,23 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 20px;
+  &.main {
+    border-color: #B7252B;
+    border-width: 2px;
+    box-shadow: 0 1px 12px rgba(148, 17, 23, 0.35);
+  }
 
   &-section {
     position: relative;
     z-index: 2;
-    margin: 30px 0px;
-    &.inner {
-      margin-top: 90px;
+    &.review {
+      background-color: #fff;
+      position: sticky;
+      padding-bottom: 1px;
+      top: 84px;
+    }
+    &.scroll {
+      box-shadow: 0px 3px 22px 4px rgba(1, 36, 126, 0.11);
     }
   }
 
@@ -387,7 +414,7 @@
     margin: 10px 0;
 
     a {
-      font-weight: bold;
+      font-weight: 600;
       font-size: 10px;
       line-height: 14px;
       color: #FF883E;
@@ -439,13 +466,15 @@
       }
     }
   }
+  &-buttons {
+    width: 200px;
+  }
 
   &-bonus {
-    width: 200px;
     color: white;
     font-size: 20px;
     font-weight: 600;
-    background-color: $button-color;
+    background-color: #002868;
     line-height: 50px;
     text-align: center;
     text-decoration: none;
@@ -453,7 +482,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 35px;
+    //margin-bottom: 35px;
     img {
       width: 21px;
       margin-left: 6px;
@@ -499,7 +528,7 @@
   }
 
   &-rate {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 50px;
     line-height: 68px;
     color: #5DBC46;
@@ -510,7 +539,7 @@
       width: 70px;
       height: 70px;
       position: relative;
-      font-size: 30px;
+      font-size: 22px;
       font-weight: 600;
       text-align: center;
       line-height: 70px;
@@ -543,7 +572,7 @@
       }
 
       .score_vector {
-        stroke: #145072;
+        stroke: #002868;
         animation: score_progress 1s ease-out forwards;
       }
     }
@@ -578,7 +607,8 @@
   }
 
   &-text {
-    max-width: 230px;
+    text-align: center;
+    max-width: 260px;
     width: 100%;
 
     &_blue {
@@ -586,10 +616,15 @@
       color: $button-color;
     }
 
+    &_big {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
     &_bold {
       font-weight: 600;
       line-height: 24px;
-      font-size: 18px;
+      margin-top: 5px;
     }
 
     &_small {
@@ -625,7 +660,10 @@
         padding: 30px;
         background-color: #fff;
         box-shadow: 2px 2px 14px rgba(21, 33, 100, 0.18);
-
+        a {
+          font-size: 100%;
+          line-height: 1;
+        }
         &_close {
           position: absolute;
           top: 10px;
@@ -649,11 +687,17 @@
     padding-left: 15px;
     padding-right: 15px;
     height: 140px;
+    &-section {
+      &.review {
+        top: 52px;
+      }
+    }
+    &-buttons {
+      width: 130px;
+    }
     &-bonus {
       font-size: 14px;
       line-height: 46px;
-      width: 130px;
-      margin-bottom: 25px;
     }
     &-text {
       max-width: 200px;
@@ -690,14 +734,9 @@
       &-number {
         width: 50px;
         height: 50px;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 50px;
       }
-    }
-  }
-  @include breakpoint-max($lg) {
-    &-section.inner {
-      margin-top: 80px;
     }
   }
   @media (max-width: 767px) {
@@ -707,14 +746,37 @@
     border-radius: 10px;
     padding: 15px 15px 41px;
     background-color: #fff;
-    &-section {
-      margin-top: 5px;
-      &.inner {
-        margin-top: 70px;
-      }
-    }
     &-container {
       height: 130px;
+    }
+    &-section {
+      &.scroll {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        .card {
+          border: none;
+          box-shadow: none;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          padding: 10px 0 0;
+        }
+        .card-buttons {
+          max-width: 170px;
+        }
+        .card-logo {
+          width: 125px;
+          height: 50px;
+        }
+        .card-bonus {
+          margin-top: 0;
+        }
+
+        .card-badge, .card-text, .card-ratet, .card-rate-number {
+          display: none;
+          opacity: 0;
+        }
+      }
     }
     &-logo {
       margin-right: auto;
@@ -726,8 +788,8 @@
         right: 14px;
         width: 34px;
         height: 34px;
-        font-size: 15px;
-        line-height: 34px;
+        font-size: 11px;
+        line-height: 30px;
         //img {
         //    width: 34px;
         //    height: 34px;
@@ -738,7 +800,7 @@
       }
     }
     &-ratet {
-      width: 90px;
+      width: 84px;
       font-size: 10px;
       position: absolute;
       top: 21px;
@@ -748,6 +810,16 @@
     &-text {
       max-width: 100%;
       margin-top: 15px;
+      background: #F3F6F8;
+      border-radius: 5px;
+      padding: 6px 0;
+      //div {
+      //  &:nth-of-type(2) {
+      //    position: relative;
+      //    bottom: 0;
+      //    margin-top: 2px;
+      //  }
+      //}
 
       &_blue {
         display: none;
@@ -759,27 +831,22 @@
         padding: 9px;
         font-size: 14px;
         line-height: 20px;
-        text-align: center;
       }
 
-      &_small {
-        position: absolute;
-        bottom: 10px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-      }
+      //&_small {
+      //  position: absolute;
+      //  bottom: 10px;
+      //  left: 0;
+      //  width: 100%;
+      //}
+    }
+    &-buttons {
+      width: 100%;
     }
     &-bonus {
       line-height: 42px;
       margin-top: 16px;
       margin-bottom: 0;
-      width: 100%;
-    }
-    &-badge {
-      img {
-        margin-right: 6px;
-      }
     }
   }
   @include breakpoint-max($sm2) {
@@ -815,6 +882,18 @@
 
 
   }
+  @include breakpoint-max($xs4) {
+    &-section {
+      &.review {
+        top: 46px;
+      }
+      &.scroll {
+        .card-buttons {
+          max-width: 130px;
+        }
+      }
+    }
+  }
   @include breakpoint-max($xs3) {
     &-logo {
       width: 120px;
@@ -832,38 +911,53 @@
 }
 
 .text {
-  margin: 40px 0px;
-  @include breakpoint-max($md) {
-    margin-bottom: 30px;
+  margin-top: 40px;
+  .h1 {
+    font-size: 32px;
+    @include breakpoint-max($md){
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
   }
 
   h4 {
     margin-top: 30px;
+    font-size: 22px;
   }
 
   h5 {
     margin-top: 40px;
   }
+  .how-we-rate{
+    &_left {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 930px;
+    }
+    &_point {
+      &_icon {
+
+        img {
+          width: 50px;
+        }
+      }
+      &_content {
+        p {
+          border-bottom: none;
+        }
+      }
+    }
+  }
 
   &_content {
-    max-width: 960px;
+    max-width: 930px;
     margin-left: auto;
     margin-right: auto;
-    &_button-wrap {
-      display: flex;
-      align-items: center;
-      margin-top: 40px;
+    p {
+      margin-bottom: 30px;
+      padding-left: 40px;
       @include breakpoint-max($md) {
-        margin-top: 20px;
-      }
-      button {
-        flex-shrink: 0;
-      }
-      .sections-divider {
-        margin: 0 0 0 40px;
-        @include breakpoint-max($md) {
-          margin-left: 10px;
-        }
+        padding-left: 0;
       }
     }
 
@@ -885,7 +979,7 @@
       }
 
       p {
-        font-weight: bold;
+        font-weight: 600;
         margin: 0;
       }
 
@@ -902,6 +996,7 @@
     }
 
     .primary-button {
+      margin-top: 20px;
       font-size: 16px;
     }
   }
@@ -991,7 +1086,6 @@
   @include breakpoint-max($lg) {
     padding: 20px 10px;
     border-radius: 10px;
-    margin-top: 30px;
     margin-bottom: 50px;
     .primary-button {
       width: 100%;
@@ -1022,14 +1116,17 @@
   width: 100%;
   height: 3px;
   background: #E7EFFB;
-  margin: 40px auto;
+  margin: 30px auto 20px;
+  &.review {
+    margin-top: 10px;
+  }
 }
 
 .top-card {
   background: white;
   border: 1px solid rgba(20, 80, 116, 0.4);
   border-radius: 10px;
-  padding: 4px;
+  padding: 10px;
   width: 24%;
 
   .primary-button {
@@ -1044,24 +1141,10 @@
     margin-top: 28px;
   }
 
-  &__content {
-    padding-left: 6px;
-    padding-right: 6px;
-    p {
-      margin-top: 10px;
-    }
-    a {
-      text-decoration: none;
-      margin-bottom: 10px;
-      margin-top: auto;
-      display: block;
-    }
-  }
-
   &__img {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
-    height: 140px;
+    height: 190px;
     width: 100%;
 
     img {
@@ -1073,11 +1156,9 @@
 
   &__title {
     font-weight: 700;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 22px;
+    line-height: 30px;
     margin-top: 10px;
-    height: 80px;
-    overflow: hidden;
   }
 
   &__smtitle {
@@ -1132,7 +1213,7 @@
     &__overflow {
       overflow: scroll;
       position: relative;
-      height: 390px;
+      height: 320px;
     }
     &__img {
       height: 140px;
@@ -1156,15 +1237,6 @@
     }
     .primary-button {
       margin-top: 15px;
-    }
-    &__content p {
-      max-height: 66px;
-      overflow: hidden;
-    }
-  }
-  @include breakpoint-max($md) {
-    &__overflow {
-      height: 360px;
     }
   }
 }
@@ -1206,7 +1278,7 @@
   }
 
   &__smtitle {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 28px;
     line-height: 38px;
   }
@@ -1363,20 +1435,30 @@
     display: none;
   }
 }
+
 .review-page {
-  font-size: 10px;
-  line-height: 1;
-  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
+  font-weight: 600;
+  border: 2px solid #0943A0;
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  @media (min-width: 340px) {
+    line-height: 38px;
+  }
   @media (min-width: 768px) {
-    position: absolute;
-    right: 35px;
-    top: 90px;
-    font-size: 14px;
+    //position: absolute;
+    //right: 35px;
+    //top: 90px;
+    line-height: 46px;
   }
   @media (min-width: 1200px) {
-    position: absolute;
-    right: 75px;
-    top: 100px;
+    //position: absolute;
+    //right: 75px;
+    //top: 100px;
     font-size: 18px;
   }
 }

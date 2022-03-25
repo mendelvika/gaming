@@ -241,7 +241,6 @@ gulp.task('serve', gulp.series('build', function() {
     dirs.source + '/scss/style.scss',
     dirs.source + '/scss/_variables.scss',
     dirs.source + '/scss/_fonts.scss',
-    dirs.source + '/scss/_typo.scss',
     dirs.source + '/scss/_base.scss',
     dirs.source + '/scss/_grid.scss',
     dirs.source + '/blocks/**/*.scss',

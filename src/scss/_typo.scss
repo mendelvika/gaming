@@ -2,8 +2,17 @@ h1 {
   font-size: 44px;
   line-height: 1.38;
 }
-h2 {
+.h1 {
   font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  @include breakpoint-max($md){
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+h2 {
+  font-size: 34px;
   line-height: 1.375;
   @include breakpoint-max($md){
     font-size: 28px;
@@ -16,9 +25,9 @@ h3 {
     font-size: 24px;
   }
 }
-h4, .h4 {
-  font-size: 22px;
-  line-height: 30px;
+h4 {
+  font-size: #{$h4-font-size}px;
+  line-height: $line-height;
 }
 h5 {
   font-size: #{$h5-font-size}px;
@@ -30,23 +39,23 @@ h6 {
 }
 
 ul{
-  margin: 20px 0;
+  margin: 5px 0;
   color: $text-color;
-  list-style: none;
+  //list-style: none;
+  padding-left: 20px;
   li{
       margin-bottom: 10px;
-      display: flex;
-      align-items: flex-start;
-      &:before{
-          content: '';
-          display: block;
-          background: $button-color;
-          width: 12px;
-          min-width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          margin: 6px 40px 0px 0px;
-      }
+      //display: flex;
+      //align-items: center;
+      //&:before{
+      //    content: '';
+      //    display: block;
+      //    background: $button-color;
+      //    width: 8px;
+      //    height: 8px;
+      //    border-radius: 50%;
+      //    margin-right: 10px;
+      //}
   }
 }
 
