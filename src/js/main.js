@@ -32,6 +32,18 @@ $(".header_menu_link a").click(function(e) {
     $('.header_menu').removeClass('active');
 });
 
+if ( $('.header').hasClass('text-page') ) {
+    const stickyOffset = $('.header').outerHeight();
+    $(window).scroll(function(){
+        if ($(window).scrollTop() >= stickyOffset) {
+            $('.header').addClass('scroll');
+        }
+        else {
+            $('.header').removeClass('scroll');
+        }
+    });
+}
+
 $(".yak").click(function(e) {
     e.preventDefault();
     var aid = $(this).attr("href");
