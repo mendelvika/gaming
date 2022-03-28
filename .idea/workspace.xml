@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="colorado">
-      <change afterPath="$PROJECT_DIR$/src/blocks/text-page/_text-page.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/privacy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/terms.html" afterDir="false" />
+    <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/vendor.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/vendor.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_reboot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_typo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_typo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/med.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/privacy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/text-page/_text-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/text-page/_text-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/privacy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/privacy.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,9 @@
       <workItem from="1641998253078" duration="3601000" />
       <workItem from="1645356177145" duration="571000" />
       <workItem from="1648238917105" duration="5660000" />
-      <workItem from="1648328092967" duration="8277000" />
+      <workItem from="1648328092967" duration="8392000" />
+      <workItem from="1648496393834" duration="1001000" />
+      <workItem from="1648498146355" duration="423000" />
     </task>
     <task id="LOCAL-00001" summary="corrections">
       <created>1641819647649</created>
@@ -127,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641846218068</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="med">
+      <created>1648416720695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648416720695</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +153,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="corrections" />
     <MESSAGE value="colorado" />
-    <option name="LAST_COMMIT_MESSAGE" value="colorado" />
+    <MESSAGE value="med" />
+    <option name="LAST_COMMIT_MESSAGE" value="med" />
   </component>
 </project>

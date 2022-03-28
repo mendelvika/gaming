@@ -2485,6 +2485,9 @@ body {
 
 .text-page_content {
   margin-top: 50px; }
+  .text-page_content .circle {
+    width: 12px;
+    height: 12px; }
   .text-page_content p {
     font-size: 18px;
     line-height: 24px; }
@@ -2498,6 +2501,9 @@ body {
           flex-shrink: 0;
       max-width: 408px;
       margin-bottom: -8px; }
+  .text-page_content .title-multiple {
+    margin-top: 60px;
+    margin-bottom: 30px; }
   @media (max-width: 992px) {
     .text-page_content {
       margin-top: 30px; }
@@ -2507,6 +2513,11 @@ body {
         .text-page_content .title h3 {
           font-size: 20px;
           max-width: 255px; }
+      .text-page_content .title-multiple {
+        margin-top: 30px;
+        margin-bottom: 20px; }
+        .text-page_content .title-multiple h3 {
+          font-size: 20px; }
       .text-page_content p {
         font-size: 14px;
         line-height: 19px;
@@ -2607,6 +2618,9 @@ body {
       height: 4px;
       background-color: #FF0000; }
 
+.privacy-wrap {
+  max-width: 1060px; }
+
 @media (max-width: 767px) {
   .hide-mob {
     display: none; } }
@@ -2618,6 +2632,18 @@ body {
   @media (max-width: 767px) {
     .title-mob {
       display: block; } }
+
+.title-multiple {
+  font-weight: 900;
+  font-family: "Archivo", sans-serif; }
+  .title-multiple .title {
+    margin: 0; }
+  .title-multiple .title h3 {
+    line-height: 1;
+    margin-top: 3px;
+    margin-bottom: -3px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; }
 
 .red-20 {
   color: #FF0000;
