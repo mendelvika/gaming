@@ -210,11 +210,18 @@
 
 .privacy-wrap {
     max-width: 1060px;
+
 }
 
 .hide-mob {
     @media (max-width: 767px) {
         display: none;
+    }
+}
+.show-mob {
+    display: none;
+    @media (max-width: 767px) {
+        display: block;
     }
 }
 .title-mob {

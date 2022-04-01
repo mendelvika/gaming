@@ -32,6 +32,19 @@ $(".header_menu_link a").click(function(e) {
     $('.header_menu').removeClass('active');
 });
 
+$(".black-section__wrapper_btn button").click(function() {
+    $('html,body').animate({ scrollTop: ($('#contact').offset().top) }, 'slow');
+});
+
+$(".scroll-down").click(function() {
+    $('html,body').animate({ scrollTop: ($('#our-brands').offset().top) }, 'slow');
+});
+
+if ( $('.hidden-head') ) {
+    $('.hidden-head_wrap').append( $('.hidden-head') );
+}
+
+
 if ( $('.header').hasClass('text-page') ) {
     const stickyOffset = $('.header').outerHeight();
     $(window).scroll(function(){

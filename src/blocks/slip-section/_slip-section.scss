@@ -5,6 +5,8 @@
         padding-bottom: 20px;
         .container {
             margin: 0;
+            position: relative;
+            z-index: 1;
         }
     }
     &-card {
@@ -15,6 +17,8 @@
         max-width: 1605px;
         width: 95%;
         margin-left: auto;
+        position: relative;
+        overflow: hidden;
         &__content {
             display: flex;
             align-items: flex-start;
