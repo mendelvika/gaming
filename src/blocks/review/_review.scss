@@ -1,0 +1,568 @@
+.review_title {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  h1 {
+    font-size: 50px;
+    margin-bottom: 0;
+  }
+  @include breakpoint-max($lg) {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    h1 {
+      font-size: 24px;
+    }
+  }
+}
+
+.review_anchors {
+  &_wrap {
+    margin-left: -10px;
+    margin-right: -10px;
+    overflow: auto;
+    display: flex;
+    padding-bottom: 20px;
+  }
+  &_item {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid #145074;
+    box-sizing: border-box;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #002868;
+    line-height: 42px;
+    padding-right: 30px;
+    padding-left: 30px;
+    flex-shrink: 0;
+  }
+  @media (max-width: 767px) {
+    &_wrap {
+      margin-bottom: -20px;
+    }
+    &_item {
+      font-size: 14px;
+      line-height: 38px;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+}
+
+.review {
+  &_caption {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    &_text {
+      font-size: 32px;
+    }
+    &_number {
+      margin-left: 30px;
+      background: #F3F6F8;
+      border-radius: 11px;
+      line-height: 56px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 26px;
+      color: #002868;
+    }
+  }
+  @include breakpoint-max($lg) {
+    &_caption {
+      margin-top: 20px;
+      &_text {
+        font-size: 24px;
+      }
+      &_number {
+        font-size: 20px;
+        line-height: 46px;
+      }
+    }
+  }
+}
+
+.verdict {
+  &_table {
+    margin-top: 20px;
+    border: 1px solid rgba(20, 80, 116, 0.5);
+    border-radius: 10px;
+    padding: 10px 10px 10px 20px;
+    display: flex;
+    &_text {
+      border-right: 1px solid rgba(20, 80, 116, 0.5);
+      padding-right: 20px;
+      margin-right: 10px;
+      width: 100%;
+      max-width: 660px;
+    }
+    &_rate {
+      flex-shrink: 0;
+      width: 40%;
+      padding-top: 18px;
+      &_item {
+        border-bottom: 1px solid rgba(20, 80, 116, 0.5);
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      &_star {
+        b {
+          width: 50px;
+          display: inline-block;
+          text-align: right;
+        }
+        img {
+          width: 110px;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+  @include breakpoint-max($lg) {
+  //@media (max-width: 767px) {
+    &_table {
+      flex-direction: column;
+      padding-left: 10px;
+      padding-bottom: 0;
+      &_text {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+        max-width: 100%;
+      }
+      p {
+        margin-top: 0;
+      }
+      &_rate {
+        width: 100%;
+        padding-top: 0;
+        font-size: 14px;
+        &_star {
+          b {
+            width: 40px;
+          }
+          img {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.casinoinfo {
+  display: flex;
+  margin-top: 30px;
+  &_line {
+    display: flex;
+    align-items: center;
+    min-height: 66px;
+    &.border-l {
+      border-radius: 6px 0 0 6px;
+    }
+    &.border-r {
+      border-radius: 0 6px 6px 0;
+    }
+    &.border{
+      border-radius: 6px;
+    }
+    &.blue {
+      background-color: #F3F6F8;
+    }
+    & > .casinoinfo_half {
+      padding: 30px 15px;
+    }
+  }
+  &_left {
+    width: 100%;
+    border: 1px solid rgba(20, 80, 116, 0.5);
+    border-radius: 10px;
+    padding: 10px 15px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 10px;
+      bottom: 10px;
+      left: 50%;
+      width: 1px;
+      background-color: rgba(20, 80, 116, 0.5);
+      @media (max-width: 767px) {
+        content: none;
+      }
+    }
+    //display: flex;
+  }
+  &_right {
+    width: 372px;
+    flex-shrink: 0;
+    margin-left: 20px;
+    border: 1px solid rgba(20, 80, 116, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  &_half {
+    width: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    &.bord {
+      //border-right: 1px solid rgba(20, 80, 116, 0.5);
+    }
+  }
+  &_min-deposit {
+    margin-top: 20px;
+    margin-bottom: 25px;
+    &_sum {
+      width: 164px;
+      margin-left: auto;
+      margin-right: auto;
+      background: #F3F6F8;
+      border-radius: 6px;
+      text-align: center;
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      height: 40px;
+      &_cur {
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        color: white;
+        background-color: black;
+        line-height: 20px;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+  &_payments {
+    text-align: center;
+    margin: 10px -10px 25px;
+
+    img {
+      height: 22px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 2px;
+      border: 1px solid rgba(20, 80, 116, 0.3);
+    }
+    &_main {
+      &_wrap {
+        text-align: center;
+      }
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  }
+  @include breakpoint-max($lg) {
+    flex-direction: column;
+    margin-top: 20px;
+    &_right {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    &_line {
+      flex-direction: column;
+      align-items: flex-start;
+      & > .casinoinfo_half {
+        width: 100%;
+        padding: 10px;
+        &:first-child {
+          background-color: #F3F6F8;
+          border-radius: 6px;
+        }
+      }
+      &.blue {
+        background-color: white;
+      }
+    }
+    &_half {
+      &.bord {
+        border: none;
+      }
+    }
+  }
+}
+
+.gamespreview {
+
+  margin-left: -10px;
+  margin-right: -10px;
+  display: flex;
+  margin-top: 30px;
+  &_point {
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    max-height: 400px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    flex-direction: column;
+    &_point {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.compatibledevices {
+  margin: 30px -10px 70px;
+
+  &_point {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: #F3F6F8;
+    border-radius: 6px;
+    color: black;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    img {
+      margin-right: 12px;
+    }
+  }
+  @include breakpoint-max($lg) {
+    text-align: center;
+    margin-top: 20px;
+  }
+  @media (max-width: 767px) {
+    margin-left: -5px;
+    margin-right: -5px;
+    &_point {
+      width: 110px;
+      height: 40px;
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+      img {
+        width: 20px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+.how-we-rate {
+  margin-top: 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  .review_caption {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+  &_left {
+    width: 100%;
+    max-width: 686px;
+  }
+  &_right {
+    width: 372px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 90px;
+    background: #F3F6F8;
+    border-radius: 6px;
+    padding: 30px;
+    &_caption {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      img {
+        width: 40px;
+        margin-right: 20px;
+      }
+    }
+    &_link {
+      display: block;
+      padding-left: 60px;
+      text-decoration: none;
+      color: $black;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+  &_point {
+    display: flex;
+    margin-bottom: 10px;
+    &_icon {
+      display: flex;
+      flex-shrink: 0;
+      flex-direction: column;
+      img {
+        width: 36px;
+        flex-shrink: 0;
+        margin-bottom: 10px;
+      }
+      &:after {
+        content: '';
+        width: 2px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #01247E;;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+      .how-we-rate_point_icon {
+        &:after {
+          content: none;
+        }
+      }
+      p {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+    &_content {
+      width: 100%;
+      padding-bottom: 15px;
+      padding-left: 15px;
+      &_caption {
+        font-weight: 600;
+        font-size: 22px;
+      }
+      p {
+        border-bottom:  1px solid rgba(20, 80, 116, 0.5);
+        padding-bottom: 20px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  @include breakpoint-max($lg) {
+    margin-top: 20px;
+    flex-direction: column;
+    &_left {
+      max-width: 100%;
+    }
+    &_right {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+}
+
+.whytrust {
+  &_item {
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 400px;
+    display: inline-flex;
+    &_icon {
+      width: 86px;
+      margin-right: 32px;
+      flex-shrink: 0;
+      img {
+        width: 100%;
+      }
+    }
+    &_caption {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      color: #01247E;
+    }
+  }
+  @include breakpoint-max($lg) {
+    &_item {
+      margin-left: 0;
+      margin-top: 20px;
+      max-width: 350px;
+      &_icon {
+        width: 70px;
+        margin-right: 26px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: center;
+    &_item {
+      font-size: 14px;
+      text-align: left;
+      &_caption {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.about_gray {
+  background-color: #F8F9FA;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  .review_caption {
+    margin-top: 0;
+  }
+  a, .link {
+    color: #01247E;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .link {
+    opacity: .5;
+  }
+  @media (max-width: 767px) {
+    margin-top: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    .review_caption_text {
+      font-size: 20px;
+    }
+  }
+}
+.moreLang {
+  color: #0943A0;
+  font-weight: bold;
+  font-size: 16px;
+  //cursor: pointer;
+}
+.otherLang {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+

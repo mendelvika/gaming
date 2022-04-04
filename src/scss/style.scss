@@ -1,3 +1,6 @@
+// Это диспетчер подключений, тут не должно быть ничего, кроме импортов
+
+// Глобальные подключения
 @import '_reboot';
 @import '_variables.scss';
 @import '_mixins.scss';
@@ -5,13 +8,12 @@
 @import '_typo';
 @import '_grid';
 @import '_base';
-// blocks
-@import './src/blocks/header/_header.scss';
-@import './src/blocks/footer/_footer.scss';
-@import './src/blocks/form-section/_form-section.scss';
-@import './src/blocks/slip-section/_slip-section.scss';
-@import './src/blocks/error-page/_error-page.scss';
+
+// БЭМ-блоки. Один БЭМ-блок = 1 файл. ВСЕГДА.
+@import './src/blocks/page-header/_page-header.scss';
+@import './src/blocks/page-footer/_page-footer.scss';
+@import './src/blocks/info-block/_info-block.scss';
+
 //pages
 @import './src/blocks/homepage/_homepage.scss';
-@import './src/blocks/text-page/_text-page.scss';
-@import './src/blocks/slick/slick';
+@import './src/blocks/review/_review.scss';

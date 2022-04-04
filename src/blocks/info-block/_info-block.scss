@@ -1,0 +1,65 @@
+.info-block {
+  margin-top: 30px;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  &_content {
+    max-width: 960px;
+    min-width: 664px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $light-bg;
+    border-radius: 70px;
+    padding: 13px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  &_item {
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 18px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    white-space: nowrap;
+    img  {
+      margin-right: 10px;
+      max-width: 24px;
+    }
+    @include breakpoint-max($lg) {
+      font-size: 13px;
+    }
+  }
+  @include breakpoint-max($lg) {
+    overflow: hidden;
+    &_content {
+      min-width: 100%;
+      flex-wrap: wrap;
+      padding: 10px;
+      justify-content: flex-start;
+    }
+    &_item {
+      margin-bottom: 10px;
+      img {
+        margin-right: 6px;
+        height: 18px;
+      }
+    }
+  }
+  @include breakpoint-max($md) {
+    &_content {
+      border-radius: 10px;
+    }
+    &_item {
+      width: 50%;
+      margin-left: 0;
+      margin-right: 0;
+      img {
+        margin-right: 6px;
+        height: 18px;
+      }
+    }
+  }
+}

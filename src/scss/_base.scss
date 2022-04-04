@@ -1,114 +1,79 @@
 html {
-    box-sizing: border-box;
-    -ms-overflow-style: scrollbar;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: $font-text;
-    color: $black;
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+  color: $black;
 }
 
 html,
 body {
-    font-size: #{$root-font-size}px;
-    line-height: $line-height;
+  font-size: #{$root-font-size}px;
+  line-height: $line-height;
+}
+
+a {
+  color: #002868;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .text-blue {
-    color: $button-color;
-}
-
-.text-small {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    color: #000000
+  color: #002868;
 }
 
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .content {
-    flex-grow: 1;
-    width: 100%;
-    position: relative;
+  flex-grow: 1;
+  width: 100%;
+  position: relative;
 }
 
 ::-webkit-input-placeholder {
-    color: $placeholder-color;
+  color: $placeholder-color;
 }
 
 ::-moz-placeholder {
-    color: $placeholder-color;
+  color: $placeholder-color;
 }
 
 :-moz-placeholder {
-    color: $placeholder-color;
+  color: $placeholder-color;
 }
 
 :-ms-input-placeholder {
-    color: $placeholder-color;
-}
-
-.btn {
-    background: $btn-bg;
-    box-sizing: border-box;
-    border-radius: 8px;
-    color: $btn-color;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 26px;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 14px 40px;
-    width: 250px;
-    display: block;
-    text-align: center;
-    outline: 0;
-    &:hover {
-        text-decoration: none;
-        color: $btn-color;
-        background-color: #E40A0A;
-    }
-    &:active {
-        border: none;
-        outline: 0;
-        background-color: #E40A0A;
-        box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.29);
-    }
-    @include breakpoint-max($sm) {
-        width: 160px;
-        padding: 8px 40px;
-        font-size: 16px;
-        line-height: 23px;
-    }
+  color: $placeholder-color;
 }
