@@ -1642,7 +1642,7 @@ a {
   border-bottom: 5px solid #BF0A30;
   font-size: 8px;
   text-transform: uppercase;
-  color: #0943A0;
+  color: #002868;
   font-weight: 600;
   padding: 4px 0;
   width: 32px;
@@ -1658,7 +1658,7 @@ a {
 
 .footer {
   background: #002868;
-  padding: 30px 0px; }
+  padding: 30px 0 10px; }
   .footer .ongameuk-logo {
     margin-right: 12px;
     width: 196px;
@@ -1824,7 +1824,7 @@ a {
   background-color: #225338; }
 
 .primary-button {
-  background: #0943A0;
+  background: #002868;
   border-radius: 6px;
   width: 188px;
   height: 52px;
@@ -1843,21 +1843,21 @@ a {
 .link {
   display: inline-block;
   text-decoration: underline;
-  color: #0943A0;
+  color: #002868;
   cursor: pointer; }
 
 .main-screen {
-  margin-top: 85px;
+  margin-top: 110px;
   position: relative;
   z-index: 4; }
   .main-screen .main-title {
     font-weight: 600;
     max-width: 650px;
-    color: #0943A0; }
+    color: #002868; }
     .main-screen .main-title.about {
       color: #000000; }
     .main-screen .main-title_orange {
-      color: #0943A0;
+      color: #002868;
       font-size: 70px;
       line-height: 122.9%;
       font-weight: 800;
@@ -1991,7 +1991,7 @@ a {
       max-width: 240px; } }
   @media (max-width: 992px) {
     .main-screen {
-      margin-top: 65px; }
+      margin-top: 75px; }
       .main-screen .main-title {
         font-size: 41px;
         max-width: 504px; }
@@ -2005,24 +2005,26 @@ a {
       .main-screen__bg img {
         width: 122%; } }
   @media (max-width: 767px) {
-    .main-screen__wrapper_after-text_item {
-      font-size: 12px;
-      width: 100%;
-      margin-right: 0; }
-      .main-screen__wrapper_after-text_item img {
-        width: 16px;
-        margin-right: 6px; }
-      .main-screen__wrapper_after-text_item .link {
-        font-size: 11px; }
-    .main-screen .main-title {
-      font-size: 23px;
-      line-height: 35px;
-      width: 260px; }
-      .main-screen .main-title_orange {
-        font-size: 42px;
-        line-height: 46px; }
-    .main-screen__img {
-      max-height: 145px; } }
+    .main-screen {
+      margin-top: 65px; }
+      .main-screen__wrapper_after-text_item {
+        font-size: 12px;
+        width: 100%;
+        margin-right: 0; }
+        .main-screen__wrapper_after-text_item img {
+          width: 16px;
+          margin-right: 6px; }
+        .main-screen__wrapper_after-text_item .link {
+          font-size: 11px; }
+      .main-screen .main-title {
+        font-size: 23px;
+        line-height: 35px;
+        width: 260px; }
+        .main-screen .main-title_orange {
+          font-size: 42px;
+          line-height: 46px; }
+      .main-screen__img {
+        max-height: 145px; } }
   @media (max-width: 580px) {
     .main-screen .undertitle {
       display: none; }
@@ -2093,7 +2095,7 @@ a {
       background-color: #fff;
       position: sticky;
       padding-bottom: 1px;
-      top: 84px; }
+      top: 113px; }
     .card-section.scroll {
       -webkit-box-shadow: 0px 3px 22px 4px rgba(1, 36, 126, 0.11);
               box-shadow: 0px 3px 22px 4px rgba(1, 36, 126, 0.11); }
@@ -2185,7 +2187,7 @@ a {
     width: 200px; }
   .card-bonus {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     background-color: #002868;
     line-height: 50px;
@@ -2238,7 +2240,7 @@ a {
       line-height: 30px;
       border-radius: 10px;
       padding: 14px 22px;
-      background-color: #0943A0;
+      background-color: #002868;
       cursor: pointer;
       height: 60px; }
     .card-bonus .card-badge {
@@ -2314,12 +2316,11 @@ a {
     .card-badge.blue {
       background-color: #6B68FC; }
   .card-text {
-    text-align: center;
-    max-width: 260px;
+    max-width: 250px;
     width: 100%; }
     .card-text_blue {
       font-size: 18px;
-      color: #0943A0; }
+      color: #002868; }
     .card-text_big {
       font-size: 24px;
       font-weight: 600; }
@@ -2333,7 +2334,7 @@ a {
       position: relative; }
       .card-text_small_linkk {
         display: inline-block;
-        color: #0943A0;
+        color: #002868;
         font-size: 12px;
         text-decoration: none;
         cursor: pointer; }
@@ -2375,7 +2376,7 @@ a {
       padding-right: 15px;
       height: 140px; }
       .card-section.review {
-        top: 52px; }
+        top: 60px; }
       .card-buttons {
         width: 130px; }
       .card-bonus {
@@ -2383,6 +2384,8 @@ a {
         line-height: 46px; }
       .card-text {
         max-width: 200px; }
+        .card-text_big {
+          font-size: 18px; }
       .card-logo {
         width: 160px;
         height: 64px; }
@@ -2469,7 +2472,8 @@ a {
         margin-top: 15px;
         background: #F3F6F8;
         border-radius: 5px;
-        padding: 6px 0; }
+        padding: 6px 0;
+        text-align: center; }
         .card-text_blue {
           display: none; }
         .card-text_bold {
@@ -2478,6 +2482,11 @@ a {
           padding: 9px;
           font-size: 14px;
           line-height: 20px; }
+        .card-text_small {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          width: 100%; }
       .card-buttons {
         width: 100%; }
       .card-bonus {
@@ -2577,7 +2586,7 @@ a {
         top: 0;
         bottom: 0;
         left: 0;
-        background-color: #0943A0;
+        background-color: #002868;
         width: 5px;
         border-radius: 0 5px 5px 0; }
     .text_content .primary-button {
@@ -2627,7 +2636,7 @@ a {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
-    color: #0943A0;
+    color: #002868;
     width: 100%;
     height: 54px;
     margin-top: 10px; }
@@ -2665,7 +2674,7 @@ a {
   .form .privacy-policy {
     max-width: 372px; }
     .form .privacy-policy a {
-      color: #0943A0;
+      color: #002868;
       text-decoration: none;
       font-size: inherit;
       font-weight: inherit; }
@@ -2961,7 +2970,7 @@ a {
       line-height: 46px; } }
   @media (min-width: 1200px) {
     .review-page {
-      font-size: 18px; } }
+      font-size: 16px; } }
 
 @-webkit-keyframes score_progress {
   0% {
