@@ -66,9 +66,14 @@
     font-weight: 600;
     max-width: 650px;
     color: $button-color;
+
     &.about {
       color: $black;
+      @media (max-width: 767px) {
+        font-size: 26px;
+      }
     }
+
     &_orange {
       color: $button-color;
       font-size: 70px;
@@ -102,7 +107,9 @@
     min-height: 340px;
     @include breakpoint-max($lg) {
       min-height: 100px;
+      align-items: flex-start;
     }
+
     &_after-text {
       margin-top: 30px;
 
@@ -133,6 +140,7 @@
         padding: 40px;
         background-color: #fff;
         box-shadow: 2px 2px 14px rgba(21, 33, 100, 0.18);
+        z-index: 2;
 
         p {
           margin: 0;
@@ -226,7 +234,7 @@
 
   @include breakpoint-max($xl) {
     &__img {
-      max-width: 240px;
+      max-width: 190px;
     }
   }
   @include breakpoint-max($lg) {
@@ -234,9 +242,11 @@
     .main-title {
       font-size: 41px;
       max-width: 504px;
+
       &.about {
         max-width: 100%;
         width: 100%;
+        margin-top: 5px;
       }
     }
 
@@ -255,7 +265,7 @@
     }
   }
   @media (max-width: 767px) {
-    margin-top: 65px;
+    margin-top: 68px;
     &__wrapper {
       &_after-text_item {
         font-size: 12px;
@@ -282,8 +292,8 @@
         line-height: 46px;
       }
     }
-    &__img {                    
-      max-height: 145px;        
+    &__img {
+      max-height: 145px;
     }
 
   }
@@ -353,6 +363,7 @@
   padding-left: 30px;
   padding-right: 30px;
   margin-bottom: 20px;
+
   &.main {
     border-color: #B7252B;
     border-width: 2px;
@@ -362,12 +373,14 @@
   &-section {
     position: relative;
     z-index: 2;
+
     &.review {
       background-color: #fff;
       position: sticky;
       padding-bottom: 1px;
-      top: 113px;
+      top: 94px;
     }
+
     &.scroll {
       box-shadow: 0px 3px 22px 4px rgba(1, 36, 126, 0.11);
     }
@@ -467,6 +480,7 @@
       }
     }
   }
+
   &-buttons {
     width: 200px;
   }
@@ -661,10 +675,12 @@
         padding: 30px;
         background-color: #fff;
         box-shadow: 2px 2px 14px rgba(21, 33, 100, 0.18);
+
         a {
           font-size: 100%;
           line-height: 1;
         }
+
         &_close {
           position: absolute;
           top: 10px;
@@ -692,11 +708,6 @@
     padding-left: 15px;
     padding-right: 15px;
     height: 140px;
-    &-section {
-      &.review {
-        top: 60px;
-      }
-    }
     &-buttons {
       width: 130px;
     }
@@ -706,6 +717,7 @@
     }
     &-text {
       max-width: 200px;
+
       &_big {
         font-size: 18px;
       }
@@ -747,6 +759,13 @@
       }
     }
   }
+  @include breakpoint-max($lg) {
+    &-section {
+      &.review {
+        top: 60px;
+      }
+    }
+  }
   @media (max-width: 767px) {
     flex-direction: column;
     height: auto;
@@ -762,6 +781,7 @@
         position: fixed;
         width: 100%;
         left: 0;
+
         .card {
           border: none;
           box-shadow: none;
@@ -769,13 +789,16 @@
           flex-wrap: nowrap;
           padding: 10px 0 0;
         }
+
         .card-buttons {
           max-width: 170px;
         }
+
         .card-logo {
           width: 125px;
           height: 50px;
         }
+
         .card-bonus {
           margin-top: 0;
         }
@@ -814,6 +837,7 @@
       top: 21px;
       right: 61px;
       text-align: left;
+
       b {
         font-size: 10px;
       }
@@ -882,14 +906,14 @@
       }
     }
     &-text {
-       &_small {
-            &_modal {
-              width: auto;
-              top: 15px;
-              left: 0;
-              right: 0;
-            }
-       }
+      &_small {
+        &_modal {
+          width: auto;
+          top: 15px;
+          left: 0;
+          right: 0;
+        }
+      }
     }
 
 
@@ -899,6 +923,7 @@
       &.review {
         top: 46px;
       }
+
       &.scroll {
         .card-buttons {
           max-width: 130px;
@@ -924,9 +949,10 @@
 
 .text {
   margin-top: 40px;
+
   .h1 {
     font-size: 32px;
-    @include breakpoint-max($md){
+    @include breakpoint-max($md) {
       font-size: 24px;
       margin-bottom: 20px;
     }
@@ -940,12 +966,14 @@
   h5 {
     margin-top: 40px;
   }
-  .how-we-rate{
+
+  .how-we-rate {
     &_left {
       margin-left: auto;
       margin-right: auto;
       max-width: 930px;
     }
+
     &_point {
       &_icon {
 
@@ -953,6 +981,7 @@
           width: 50px;
         }
       }
+
       &_content {
         p {
           border-bottom: none;
@@ -965,6 +994,7 @@
     max-width: 930px;
     margin-left: auto;
     margin-right: auto;
+
     p {
       margin-bottom: 30px;
       padding-left: 40px;
@@ -1129,6 +1159,7 @@
   height: 3px;
   background: #E7EFFB;
   margin: 30px auto 20px;
+
   &.review {
     margin-top: 10px;
   }
