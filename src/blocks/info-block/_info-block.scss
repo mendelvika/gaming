@@ -32,7 +32,7 @@
       font-size: 13px;
     }
   }
-  @include breakpoint-max($lg) {
+  @media (max-width: 650px) {
     overflow: hidden;
     &_content {
       min-width: 100%;
@@ -42,13 +42,9 @@
     }
     &_item {
       margin-bottom: 10px;
-      img {
-        margin-right: 6px;
-        height: 18px;
-      }
     }
   }
-  @include breakpoint-max($md) {
+  @media (max-width: 650px) {
     &_content {
       border-radius: 10px;
     }
