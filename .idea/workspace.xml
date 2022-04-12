@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="" />
+    <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="NY blue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/IND-3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/caesars-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/favicon/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sportsbook-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/info-block/_info-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/info-block/_info-block.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/review/_review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/review/_review.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/caesars-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sportsbook-review.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,10 +32,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="draft-kings" />
+        <entry key="$PROJECT_DIR$" value="orign/NJ-blue" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -29,6 +52,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -103,6 +127,10 @@
       <workItem from="1648498146355" duration="662000" />
       <workItem from="1648739003017" duration="4068000" />
       <workItem from="1648806822654" duration="6048000" />
+      <workItem from="1649102958840" duration="6334000" />
+      <workItem from="1649272796530" duration="1246000" />
+      <workItem from="1649322498257" duration="9344000" />
+      <workItem from="1649758699861" duration="1083000" />
     </task>
     <task id="LOCAL-00001" summary="corrections">
       <created>1641819647649</created>
@@ -139,7 +167,28 @@
       <option name="project" value="LOCAL" />
       <updated>1648827011945</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="indi blue">
+      <created>1649103231444</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1649103231444</updated>
+    </task>
+    <task id="LOCAL-00007" summary="NY blue">
+      <created>1649183085529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1649183085529</updated>
+    </task>
+    <task id="LOCAL-00008" summary="NY blue">
+      <created>1649540465309</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1649540465309</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +199,24 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/orign/indi-blue" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -161,6 +227,8 @@
     <MESSAGE value="corrections" />
     <MESSAGE value="colorado" />
     <MESSAGE value="med" />
-    <option name="LAST_COMMIT_MESSAGE" value="med" />
+    <MESSAGE value="indi blue" />
+    <MESSAGE value="NY blue" />
+    <option name="LAST_COMMIT_MESSAGE" value="NY blue" />
   </component>
 </project>

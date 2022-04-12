@@ -83,6 +83,15 @@
       }
     }
   }
+  @include breakpoint-max($md) {
+    &_caption {
+      &_text {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .verdict {
