@@ -39,12 +39,14 @@
     }
     @include breakpoint-max($lg){
         .ongameuk-logo{
-            width: 86px;
-            height: 40px;
+            width: 112px;
+            height: auto;
         }
         &__logos{
             flex-wrap: wrap;
             justify-content: space-around;
+            margin-top: 20px;
+            margin-bottom: 10px;
             img{
                 width: 78px;
                 height: 42px;
@@ -54,6 +56,9 @@
         &__policy{
             font-size: 12px;
             line-height: 16px;
+        }
+        .copyright{
+            margin: 0;
         }
     }
     @include breakpoint-max($sm){
@@ -65,10 +70,6 @@
         }
         &__policy{
             margin-top: 20px;
-        }
-        
-        .copyright{
-            margin: 0;
         }
     }
 }

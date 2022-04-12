@@ -365,6 +365,7 @@
   @include breakpoint-max($lg) {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
   @media (max-width: 767px) {
     margin-left: -5px;

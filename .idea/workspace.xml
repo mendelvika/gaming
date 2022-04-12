@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="NY blue">
+    <list default="true" id="03a52854-35a4-46ca-958c-07991f43179e" name="Default Changelist" comment="NY blue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/IND-3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/INDi.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/US-3.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/caesars-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
@@ -14,7 +15,6 @@
       <change beforePath="$PROJECT_DIR$/dist/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sportsbook-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/info-block/_info-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/info-block/_info-block.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/review/_review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/review/_review.scss" afterDir="false" />
