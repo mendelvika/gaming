@@ -72,6 +72,11 @@
       @media (max-width: 767px) {
         font-size: 26px;
       }
+      @media (min-width: 500px) {
+        br {
+          display: none;
+        }
+      }
     }
 
     &_orange {
@@ -378,7 +383,7 @@
       background-color: #fff;
       position: sticky;
       padding-bottom: 1px;
-      top: 94px;
+      top: 101px;
     }
 
     &.scroll {
