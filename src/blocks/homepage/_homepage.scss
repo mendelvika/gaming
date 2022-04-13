@@ -386,7 +386,7 @@
       background-color: #fff;
       position: sticky;
       padding-bottom: 1px;
-      top: 84px;
+      top: 102px;
     }
 
     &.scroll {
@@ -766,11 +766,16 @@
         line-height: 50px;
       }
     }
+    &-section {
+      &.review {
+        top: 84px;
+      }
+    }
   }
   @media (max-width: 767px) {
     &-section {
       &.review {
-        top: 46px;
+        top: 60px;
       }
     }
   }
