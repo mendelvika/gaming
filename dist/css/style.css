@@ -2371,7 +2371,7 @@ a {
         position: absolute;
         z-index: 10;
         top: 25px;
-        left: 0;
+        left: -30%;
         width: 570px;
         border-radius: 20px;
         font-size: 12px;
@@ -2516,6 +2516,11 @@ a {
           bottom: 10px;
           left: 0;
           width: 100%; }
+          .card-text_small_modal {
+            width: auto;
+            top: 15px;
+            left: 0;
+            right: 0; }
       .card-buttons {
         width: 100%; }
       .card-bonus {
@@ -2541,12 +2546,7 @@ a {
                   transform: none; }
         .card-item_reverse-skewed {
           -webkit-transform: none;
-                  transform: none; }
-      .card-text_small_modal {
-        width: auto;
-        top: 15px;
-        left: 0;
-        right: 0; } }
+                  transform: none; } }
   @media (max-width: 375px) {
     .card-section.review {
       top: 46px; }
@@ -2714,8 +2714,13 @@ a {
       margin-bottom: 50px; }
       .form .primary-button {
         width: 100%;
-        margin-bottom: 20px; } }
-  @media (max-width: 580px) {
+        max-width: 200px; } }
+  @media (max-width: 768px) {
+    .form .primary-button {
+      margin-bottom: 20px;
+      max-width: 100%; }
+    .form .privacy-policy {
+      max-width: 100%; }
     .form__row {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
