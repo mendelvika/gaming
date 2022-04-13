@@ -78,7 +78,7 @@
     &_img {
       max-width: 100%;
       padding: 30px 25px 30px 35px;
-      @include breakpoint-min($lg) {
+      @include breakpoint-min($md) {
         display: none !important;
       }
     }
@@ -98,7 +98,7 @@
       }
     }
   }
-  @include breakpoint-max($lg){
+  @include breakpoint-max(767px){
     padding-top: 10px;
     padding-bottom: 10px;
     &_menu {
@@ -187,7 +187,7 @@
   right: 0;
   z-index: 100;
   display: none;
-  @include breakpoint-max($lg){
+  @include breakpoint-max(767px){
     display: none!important;
   }
 }
@@ -209,7 +209,7 @@
     outline: none;
   }
 
-  @include breakpoint-min($lg) {
+  @include breakpoint-min($md) {
     display: none !important;
   }
 }
