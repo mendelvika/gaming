@@ -1,28 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03a52854-35a4-46ca-958c-07991f43179e" name="Default Changelist" comment="NY blue">
+    <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/INDi.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/US-3.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/caesars-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/USA.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/img/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/favicon/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sportsbook-review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/review/_review.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/review/_review.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/caesars-review.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon/favicon.ico" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sportsbook-review.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,11 +211,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="corrections" />
     <MESSAGE value="colorado" />
     <MESSAGE value="med" />
     <MESSAGE value="indi blue" />
     <MESSAGE value="NY blue" />
-    <option name="LAST_COMMIT_MESSAGE" value="NY blue" />
+    <MESSAGE value="MCH blue" />
+    <option name="LAST_COMMIT_MESSAGE" value="MCH blue" />
   </component>
 </project>
