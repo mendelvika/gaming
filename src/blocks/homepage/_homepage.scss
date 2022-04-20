@@ -112,7 +112,6 @@
     min-height: 340px;
     @include breakpoint-max($lg) {
       min-height: 100px;
-      align-items: flex-start;
     }
 
     &_after-text {
@@ -239,7 +238,7 @@
 
   @include breakpoint-max($xl) {
     &__img {
-      max-width: 190px;
+      max-width: 300px;
     }
   }
   @include breakpoint-max($lg) {
@@ -290,7 +289,7 @@
     .main-title {
       font-size: 23px;
       line-height: 35px;
-      width: 260px;
+      width: 220px;
       &.about {
         margin-top: 5px;
       }
@@ -338,8 +337,8 @@
       img {
         position: absolute;
         right: 0;
-        top: 9px;
-        width: 130px;
+        top: 0;
+        width: 150px;
         max-width: 240px;
       }
     }
@@ -885,7 +884,7 @@
         width: 100%;
         &_modal {
           width: auto;
-          top: 15px;
+          top: 23px;
           left: 0;
           right: 0;
         }

@@ -3,13 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/USA.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/caesars-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/favicon/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/main-screen/ongameie-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/main-screen/ongameie-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/main-screen/right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/main-screen/right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/ongameuk-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/ongameuk-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/top-rated-slots-sites/9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sportsbook-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/caesars-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/main-screen/ongameie-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/main-screen/ongameie-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/main-screen/right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/main-screen/right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/ongameuk-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/ongameuk-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/top-rated-slots-sites/9.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sportsbook-review.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,7 +51,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="orign/NJ-blue" />
+        <entry key="$PROJECT_DIR$" value="usa-blue" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gulp.js.build" />
         <item itemvalue="Gulp.js.default" />
+        <item itemvalue="Gulp.js.build" />
       </list>
     </recent_temporary>
   </component>
@@ -118,6 +150,8 @@
       <workItem from="1649272796530" duration="1246000" />
       <workItem from="1649322498257" duration="9344000" />
       <workItem from="1649758699861" duration="1083000" />
+      <workItem from="1650309020732" duration="2156000" />
+      <workItem from="1650493674974" duration="671000" />
     </task>
     <task id="LOCAL-00001" summary="corrections">
       <created>1641819647649</created>
@@ -175,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649540465309</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="MCH blue">
+      <created>1650309047697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650309047697</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

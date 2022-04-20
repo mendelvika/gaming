@@ -8,7 +8,7 @@
   padding-bottom: 15px;
   background: white;
   .logo{
-    width: 162px;
+    width: 234px;
     img {
       max-width: 100%;
     }
@@ -170,9 +170,15 @@
       }
     }
   }
-  @include breakpoint-max($lg) {
+  @include breakpoint-max($xl) {
     .logo{
-      width: 112px;
+      width: 161px;
+      //height: 40px;
+    }
+  }
+  @include breakpoint-max($md) {
+    .logo{
+      width: 121px;
       //height: 40px;
     }
   }
