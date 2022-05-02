@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="301d4e60-b72c-4614-9a58-e62c94b3ddf4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/NJ-9.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-footer/_page-footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/page-header/_page-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/caesars-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/ongameuk-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/ongameuk-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sportsbook-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/caesars-review.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/ongameuk-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/ongameuk-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sportsbook-review.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gulp.js.default" />
         <item itemvalue="Gulp.js.build" />
+        <item itemvalue="Gulp.js.default" />
       </list>
     </recent_temporary>
   </component>
