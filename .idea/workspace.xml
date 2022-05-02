@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="03a52854-35a4-46ca-958c-07991f43179e" name="Default Changelist" comment="NY blue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/IND.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/INDI.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/caesars-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sportsbook-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/blocks/homepage/_homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/caesars-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/caesars-review.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sportsbook-review.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/sportsbook-review.html" afterDir="false" />
