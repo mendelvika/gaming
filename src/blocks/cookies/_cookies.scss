@@ -1,0 +1,109 @@
+.cookies {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  max-width: 1250px;
+  z-index: 200;
+  transform: translateX(-50%);
+  &_wrap {
+    box-shadow: 2px 2px 14px 3px rgba(21, 33, 100, 0.18);
+    border-radius: 10px;
+    background-color: #002868;
+    height: 150px;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  &_logo {
+    margin-top: -10px;
+    margin-left: -30px;
+    margin-right: 19px;
+    flex-shrink: 0;
+    min-width: 160px;
+  }
+  &_text {
+    padding-right: 40px;
+    padding-top: 24px;
+    padding-left: 19px;
+    width: 100%;
+    &_caption {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 7px;
+    }
+    &_flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &_btns {
+        display: flex;
+        margin-right: 40px;
+        flex-shrink: 0;
+        button {
+          font-size: 16px;
+          line-height: 46px;
+          color: rgba(0, 40, 104, 1);
+          border: 2px solid #FFFFFF;
+          border-radius: 10px;
+          padding-left: 23px;
+          padding-right: 23px;
+          background: #fff;
+        }
+      }
+    }
+  }
+  &_close {
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 40, 104, 0.15);
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    font-size: 0;
+    img {
+      width: 16px;
+    }
+  }
+  @media (max-width: 1060px) {
+    width: 99%;
+    &_logo {
+      display: none !important;
+    }
+    &_wrap {
+      height: auto;
+    }
+    &_text {
+      padding: 15px 20px;
+      &_caption {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      &_flex {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 13px;
+        &_btns {
+          margin-top: 15px;
+          display: flex;
+          flex-shrink: initial;
+          width: 100%;
+          button {
+            font-size: 14px;
+            line-height: 32px;
+            white-space: nowrap;
+            width: 100%;
+            max-width: 160px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.error-page {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  img {
+    max-width: 100%;
+    width: 650px;
+  }
+  &_link {
+    color: white;
+    background-color: #002868;
+    border-radius: 8px;
+    text-decoration: none;
+    line-height: 55px;
+    width: 250px;
+    text-align: center;
+    margin-top: 43px;
+    &:hover {
+      color: white;
+    }
+  }
+  @media (max-width: 500px) {
+    img {
+      margin-top: auto;
+    }
+    &_link {
+      line-height: 50px;
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: 50px;
+    }
+  }
+}

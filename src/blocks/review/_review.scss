@@ -325,7 +325,8 @@
     margin-left: 10px;
     border-radius: 6px;
     overflow: hidden;
-    max-height: 400px;
+    flex: 1;
+    //max-height: 400px;
   }
   img {
     width: 100%;
